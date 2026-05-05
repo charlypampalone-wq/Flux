@@ -1,0 +1,4456 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#F7F1E6">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Flux">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="description" content="Flux — ton coach quotidien, carnet d'atelier ULIS">
+<title>Flux — ton coach quotidien</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href='data:application/manifest+json;charset=utf-8,%7B%22name%22%3A%22Flux%20%E2%80%94%20ton%20coach%20quotidien%22%2C%22short_name%22%3A%22Flux%22%2C%22description%22%3A%22Carnet%20d%27atelier%20ULIS%22%2C%22start_url%22%3A%22.%2F%22%2C%22scope%22%3A%22.%2F%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait%22%2C%22background_color%22%3A%22%23F7F1E6%22%2C%22theme_color%22%3A%22%23F7F1E6%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjM4IiBmaWxsPSIjRjdGMUU2Ii8%2BPGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iNTAiIGZpbGw9IiNGQkY1RUEiIHN0cm9rZT0iIzJGMkIyNSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz48ZWxsaXBzZSBjeD0iOTYiIGN5PSI5NiIgcng9IjcwIiByeT0iMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJGMkIyNSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHRyYW5zZm9ybT0icm90YXRlKC0xNSA5NiA5NikiLz48cGF0aCBkPSJNNzAgOTAgUTgwIDc1IDk1IDg1IFExMTAgOTUgMTIwIDgwIiBmaWxsPSIjN0I5Qjc4IiBvcGFjaXR5PSIuNiIvPjxjaXJjbGUgY3g9Ijg1IiBjeT0iOTAiIHI9IjIiIGZpbGw9IiMyRjJCMjUiLz48Y2lyY2xlIGN4PSIxMDciIGN5PSI5MCIgcj0iMiIgZmlsbD0iIzJGMkIyNSIvPjxwYXRoIGQ9Ik04OCAxMDUgUTk2IDExMiAxMDQgMTA1IiBmaWxsPSJub25lIiBzdHJva2U9IiMyRjJCMjUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L3N2Zz4%3D%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%2C%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMCIgZmlsbD0iI0Y3RjFFNiIvPjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTM1IiBmaWxsPSIjRkJGNUVBIiBzdHJva2U9IiMyRjJCMjUiIHN0cm9rZS13aWR0aD0iNiIvPjxlbGxpcHNlIGN4PSIyNTYiIGN5PSIyNTYiIHJ4PSIxOTAiIHJ5PSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMkYyQjI1IiBzdHJva2Utd2lkdGg9IjQiIHRyYW5zZm9ybT0icm90YXRlKC0xNSAyNTYgMjU2KSIvPjxwYXRoIGQ9Ik0xODUgMjQwIFEyMTAgMjAwIDI1MCAyMjUgUTI5MCAyNTAgMzIwIDIxNSIgZmlsbD0iIzdCOUI3OCIgb3BhY2l0eT0iLjYiLz48Y2lyY2xlIGN4PSIyMjUiIGN5PSIyNDAiIHI9IjYiIGZpbGw9IiMyRjJCMjUiLz48Y2lyY2xlIGN4PSIyOTAiIGN5PSIyNDAiIHI9IjYiIGZpbGw9IiMyRjJCMjUiLz48cGF0aCBkPSJNMjMwIDI4NSBRMjU2IDMxMCAyODIgMjg1IiBmaWxsPSJub25lIiBzdHJva2U9IiMyRjJCMjUiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8%2BPC9zdmc%2B%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%22%7D%5D%7D'>
+
+<style>
+:root{
+  --paper:#F7F1E6;
+  --paper-2:#FBF5EA;
+  --paper-3:#F0E7D4;
+  --ink:#2F2B25;
+  --ink-2:#6B5E4F;
+  --ink-3:#9A8B77;
+  --line:rgba(47,43,37,0.14);
+  --line-2:rgba(47,43,37,0.28);
+  --sage:#7B9B78;
+  --sage-soft:#C8DCC4;
+  --terracotta:#C9784A;
+  --terracotta-soft:#F0CFB8;
+  --blue:#7FA6C9;
+  --blue-soft:#CCDCEA;
+  --yellow:#E8C766;
+  --yellow-soft:#F4E4A8;
+  --pink:#E8A3B5;
+  --pink-soft:#F4D0DA;
+  --orange:#E8995E;
+  --violet:#B5A8C9;
+  --turquoise:#97C9C2;
+  --green-light:#A8C997;
+  --shadow-card:2px 3px 0 rgba(47,43,37,0.04), 0 4px 14px rgba(47,43,37,0.06);
+  --shadow-paper:1px 2px 0 rgba(47,43,37,0.05), 0 6px 18px rgba(47,43,37,0.08);
+  --safe-t:env(safe-area-inset-top);
+  --safe-b:env(safe-area-inset-bottom);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+html,body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Nunito',system-ui,-apple-system,sans-serif;
+  font-size:16px;
+  line-height:1.5;
+  min-height:100vh;
+  min-height:100dvh;
+  overflow-x:hidden;
+  overflow-y:auto;
+  overscroll-behavior-y:auto;
+  touch-action:auto;
+  -webkit-font-smoothing:antialiased;
+  -webkit-text-size-adjust:100%;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  opacity:.35;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.17 0 0 0 0 0.14 0 0 0 .12 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  background-size:180px 180px;
+}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
+input,textarea,select{font:inherit;color:inherit;}
+input:focus,textarea:focus,button:focus,select:focus{outline:none;}
+img,svg{display:block;max-width:100%;}
+
+/* layout ------------------------------------------------------------- */
+#app{
+  position:relative;
+  z-index:1;
+  width:100%;
+  min-height:100vh;
+  min-height:100dvh;
+  overflow-x:hidden;
+  display:flex;
+  flex-direction:column;
+  max-width:520px;
+  margin:0 auto;
+}
+main{
+  flex:1;
+  position:relative;
+}
+.screen{
+  display:none;
+  width:100%;
+  min-height:100dvh;
+  overflow:visible;
+  padding:calc(20px + var(--safe-t)) 18px calc(120px + var(--safe-b));
+  animation:fadein .35s ease;
+}
+.screen.active{display:block;}
+@keyframes fadein{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+
+/* typography --------------------------------------------------------- */
+.h-display{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:600;
+  font-size:36px;
+  line-height:1.05;
+  letter-spacing:-.5px;
+  color:var(--ink);
+}
+.h-section{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:600;
+  font-size:22px;
+  line-height:1.15;
+  color:var(--ink);
+}
+.h-card{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:600;
+  font-size:18px;
+  color:var(--ink);
+}
+.handwritten{
+  font-family:'Caveat',cursive;
+  font-weight:600;
+  color:var(--terracotta);
+}
+.eyebrow{
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--ink-2);
+}
+.muted{color:var(--ink-2);}
+.label{
+  font-size:13px;
+  font-weight:600;
+  color:var(--ink-2);
+  letter-spacing:.02em;
+}
+
+/* paper components --------------------------------------------------- */
+.paper{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:18px 16px 20px 14px;
+  padding:18px;
+  box-shadow:var(--shadow-card);
+  position:relative;
+}
+.paper.tilt-l{transform:rotate(-.6deg);}
+.paper.tilt-r{transform:rotate(.5deg);}
+.paper.lined{
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 27px,
+      rgba(127,166,201,0.18) 28px
+    ),
+    var(--paper-2);
+}
+.post-it{
+  background:linear-gradient(135deg,#F4DC8E 0%,#EFD27A 100%);
+  border-radius:3px 4px 3px 5px;
+  padding:18px 16px 16px;
+  box-shadow:
+    1px 1px 0 rgba(47,43,37,0.06),
+    4px 6px 14px rgba(47,43,37,0.14);
+  position:relative;
+  transform:rotate(-1.5deg);
+  color:var(--ink);
+}
+.post-it::after{
+  content:"";
+  position:absolute;
+  top:-7px;
+  left:50%;
+  transform:translateX(-50%);
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#E89A6E 0%,#A14920 70%,#7A3613 100%);
+  box-shadow:0 2px 4px rgba(47,43,37,0.3);
+}
+.washi{
+  display:inline-block;
+  background:repeating-linear-gradient(45deg,rgba(255,255,255,.35) 0 6px,transparent 6px 12px),var(--sage-soft);
+  padding:4px 14px;
+  border-radius:2px;
+  font-family:'Caveat',cursive;
+  font-size:18px;
+  font-weight:600;
+  color:var(--ink);
+  transform:rotate(-1deg);
+  box-shadow:0 1px 2px rgba(47,43,37,0.1);
+}
+
+/* drawn buttons ------------------------------------------------------ */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  border-radius:14px 16px 12px 18px;
+  padding:14px 22px;
+  font-weight:700;
+  font-size:16px;
+  color:var(--ink);
+  transition:transform .15s ease;
+  box-shadow:2px 3px 0 var(--ink);
+}
+.btn:active{transform:translate(2px,3px);box-shadow:none;}
+.btn-primary{background:var(--sage);border-color:var(--ink);color:#fff;}
+.btn-secondary{background:var(--terracotta-soft);}
+.btn-soft{background:var(--paper);border-color:var(--line-2);box-shadow:1px 2px 0 rgba(47,43,37,.35);}
+.btn-ghost{background:transparent;border-color:var(--line-2);box-shadow:none;}
+.btn-ghost:active{transform:scale(.97);}
+.btn-block{width:100%;}
+.btn-sm{padding:8px 14px;font-size:14px;border-radius:10px 12px 9px 13px;box-shadow:1px 2px 0 var(--ink);}
+
+/* aujourd'hui -------------------------------------------------------- */
+.today-head{
+  position:relative;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin-bottom:14px;
+  padding:6px 4px 0;
+}
+.today-head .titles{flex:1;min-width:0;}
+.today-head .h-display{margin-bottom:2px;}
+.today-head .date{
+  font-family:'Caveat',cursive;
+  font-size:24px;
+  font-weight:600;
+  color:var(--terracotta);
+  text-transform:capitalize;
+  display:inline-block;
+  position:relative;
+}
+.today-head .date::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;
+  bottom:-2px;
+  height:6px;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 6'><path d='M2 4 Q15 1 30 3 T60 3 T98 3' stroke='%23C9784A' stroke-width='1.2' fill='none' stroke-linecap='round' opacity='.55'/></svg>") repeat-x;
+  background-size:80px 6px;
+}
+.today-head .mascot-wrap{
+  position:relative;
+  flex-shrink:0;
+}
+.today-head .mascot-wrap::before{
+  content:"";
+  position:absolute;
+  top:-6px; left:-8px;
+  width:14px; height:14px;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><path d='M7 1 l1.5 4 l4 1 l-4 1 l-1.5 4 l-1.5 -4 l-4 -1 l4 -1 z' fill='%23E8C766'/></svg>") no-repeat center/contain;
+}
+.today-head .mascot-wrap::after{
+  content:"";
+  position:absolute;
+  bottom:4px; right:-4px;
+  width:10px; height:10px;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'><path d='M7 1 l1.5 4 l4 1 l-4 1 l-1.5 4 l-1.5 -4 l-4 -1 l4 -1 z' fill='%23C9784A' opacity='.6'/></svg>") no-repeat center/contain;
+}
+.flux-mascot{
+  width:118px;
+  height:118px;
+  min-width:118px;
+  min-height:118px;
+  flex-shrink:0;
+  object-fit:contain;
+  filter:drop-shadow(0 4px 8px rgba(47,43,37,0.08));
+}
+.flux-mascot.lg{width:128px;height:128px;min-width:128px;min-height:128px;}
+.flux-mascot.sm{width:62px;height:62px;min-width:62px;min-height:62px;}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:22px 4px 10px;
+  position:relative;
+}
+.section-title .h-section{font-size:20px;}
+.section-title .leaf{
+  width:18px;height:18px;
+  fill:var(--sage);
+}
+.section-title .squiggle{
+  flex:1;
+  height:8px;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 8'><path d='M2 4 Q10 1 20 4 T40 4 T60 4 T78 4' stroke='%232F2B25' stroke-width='1' fill='none' stroke-linecap='round' opacity='.18'/></svg>") repeat-x center;
+  background-size:80px 8px;
+  margin-left:4px;
+}
+
+.card-objectif{
+  position:relative;
+  margin-bottom:6px;
+  padding:20px 22px 22px;
+  background:
+    repeating-linear-gradient(to bottom, transparent 0 32px, rgba(127,166,201,0.10) 32px 33px),
+    var(--paper-2);
+  min-height:130px;
+}
+.card-objectif .h-card{
+  margin-bottom:8px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.card-objectif .objectif-text{
+  font-family:'Caveat',cursive;
+  font-size:26px;
+  font-weight:600;
+  line-height:1.3;
+  color:var(--ink);
+  max-width:80%;
+}
+.card-objectif .corner-deco{
+  position:absolute;
+  top:12px;right:14px;
+  width:64px;height:64px;
+  opacity:.95;
+  pointer-events:none;
+}
+.card-objectif::before{
+  content:"";
+  position:absolute;
+  top:-6px; left:18px;
+  width:60px; height:14px;
+  background:linear-gradient(135deg,#E8DDC4 0%,#D4C9B0 100%);
+  border-radius:1px;
+  transform:rotate(-3deg);
+  box-shadow:0 2px 4px rgba(47,43,37,0.1);
+  opacity:.85;
+}
+
+.card-route{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  cursor:pointer;
+  transition:transform .15s ease;
+}
+.card-route:active{transform:scale(.99);}
+.route-icon{
+  width:46px;height:46px;
+  flex-shrink:0;
+  background:var(--paper);
+  border:1.5px solid var(--line-2);
+  border-radius:10px 12px 9px 13px;
+  display:flex;align-items:center;justify-content:center;
+}
+.route-icon svg{width:26px;height:26px;stroke:var(--ink);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+.route-body{flex:1;min-width:0;}
+.route-title{font-weight:700;font-size:16px;margin-bottom:2px;}
+.route-sub{font-size:13px;color:var(--ink-2);}
+.route-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  background:var(--blue-soft);
+  border:1px solid var(--blue);
+  border-radius:100px;
+  padding:3px 10px;
+  font-size:12px;
+  font-weight:700;
+  color:#1f4060;
+  margin-top:6px;
+}
+.route-arrow{font-size:22px;color:var(--ink-2);flex-shrink:0;}
+
+.row-cards{
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:12px;
+  align-items:start;
+}
+
+.progress-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:6px;
+  margin-top:4px;
+}
+.metric{
+  text-align:center;
+  padding:6px 2px;
+  position:relative;
+}
+.metric-ring{
+  width:62px;height:62px;
+  margin:0 auto 8px;
+  position:relative;
+}
+.metric-ring svg{width:100%;height:100%;overflow:visible;}
+.metric-ring .ring-bg{stroke:rgba(47,43,37,0.16);stroke-width:2.2;fill:rgba(255,255,255,0.4);stroke-dasharray:3 2;}
+.metric-ring .ring-fg{stroke-width:3.2;fill:none;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%;transition:stroke-dashoffset .8s ease;}
+.metric-ring .ring-icon{
+  position:absolute;
+  inset:0;
+  display:flex;align-items:center;justify-content:center;
+}
+.metric-ring .ring-icon svg{width:24px;height:24px;}
+.metric-label{font-size:12px;font-weight:700;color:var(--ink);line-height:1.15;}
+.metric-value{
+  font-size:12px;
+  color:var(--terracotta);
+  margin-top:2px;
+  font-family:'Caveat',cursive;
+  font-weight:600;
+}
+
+.plant-card{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  background:linear-gradient(180deg,var(--paper-2) 0%,#F0E5CE 100%);
+  position:relative;
+  overflow:hidden;
+}
+.plant-img{
+  width:128px;
+  height:138px;
+  min-width:128px;
+  flex-shrink:0;
+  object-fit:contain;
+  object-position:bottom center;
+  filter:drop-shadow(0 4px 6px rgba(47,43,37,0.1));
+}
+.plant-card::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:0;right:0;
+  height:18px;
+  background:repeating-linear-gradient(90deg,transparent 0 4px,rgba(47,43,37,0.08) 4px 6px);
+  opacity:.3;
+  pointer-events:none;
+}
+.plant-info{flex:1;}
+.plant-stage{font-family:'Fraunces',serif;font-weight:600;font-size:17px;}
+.plant-status{
+  display:inline-flex;
+  align-items:center;
+  min-height:28px;
+  margin-top:7px;
+  padding:5px 9px;
+  border:1px solid rgba(47,43,37,.22);
+  border-radius:999px;
+  background:rgba(123,155,120,.14);
+  font-size:13px;
+  font-weight:800;
+  color:var(--ink);
+}
+.plant-bar{
+  height:8px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:100px;
+  margin-top:8px;
+  overflow:hidden;
+}
+.plant-bar-fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--sage) 0%,var(--green-light) 100%);
+  border-radius:100px;
+  transition:width .8s ease;
+}
+.plant-traces{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  margin-top:10px;
+  font-size:13px;
+  line-height:1.3;
+  color:var(--ink-2);
+}
+.plant-traces span::before{content:"• ";color:var(--sage);font-weight:900;}
+.plant-card .btn{
+  margin-top:11px;
+  min-height:40px;
+  padding:8px 12px;
+}
+
+.reminders-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:6px;
+}
+.reminders-list li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-family:'Caveat',cursive;
+  font-size:19px;
+  font-weight:500;
+  line-height:1.2;
+  color:var(--ink);
+  cursor:pointer;
+}
+.checkbox{
+  width:18px;height:18px;
+  border:1.5px solid var(--ink);
+  border-radius:50%;
+  flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,.35);
+}
+.reminders-list li.done .checkbox::after{
+  content:"";
+  width:10px;height:10px;
+  background:var(--ink);
+  border-radius:50%;
+}
+.reminders-list li.done{text-decoration:line-through;color:var(--ink-2);}
+
+.daily-routine-card{
+  margin:2px 0 16px;
+  padding:17px 18px 18px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.58), rgba(255,249,237,.82)),
+    var(--paper-2);
+}
+.routine-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+  margin-bottom:10px;
+}
+.routine-head .h-card{margin-bottom:2px;}
+.routine-note{
+  font-size:14px;
+  line-height:1.35;
+  color:var(--ink-2);
+}
+.routine-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+}
+.routine-step{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  padding:11px 12px;
+  min-height:48px;
+  border:1.2px solid rgba(47,43,37,.22);
+  border-radius:13px 15px 12px 16px;
+  background:rgba(255,255,255,.34);
+  cursor:pointer;
+}
+.routine-step .checkbox{margin-top:1px;}
+.routine-step.done{
+  background:rgba(123,155,120,.16);
+  border-color:rgba(123,155,120,.55);
+}
+.routine-step-text{
+  font-size:15px;
+  font-weight:700;
+  line-height:1.25;
+  color:var(--ink);
+}
+.routine-step.done .routine-step-text{text-decoration:line-through;color:var(--ink-2);}
+.week-card{
+  display:none;
+  margin:0 0 16px;
+  padding:15px 16px;
+  background:linear-gradient(180deg,rgba(232,199,102,.18),rgba(255,249,237,.72)),var(--paper-2);
+}
+.week-card.show{display:block;}
+.week-list{
+  margin-top:8px;
+  display:grid;
+  gap:6px;
+  font-size:14px;
+  line-height:1.35;
+  color:var(--ink-2);
+}
+
+/* Assets Flux -------------------------------------------------------- */
+.asset-img{
+  display:block;
+  max-width:100%;
+  object-fit:contain;
+}
+
+/* Écran Aujourd'hui -------------------------------------------------- */
+#screen-today{
+  padding-bottom:calc(136px + var(--safe-b));
+}
+#screen-today .today-head{
+  margin-bottom:8px;
+}
+.today-desk-asset{
+  margin:2px 0 24px;
+  min-height:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  pointer-events:none;
+  border-radius:0;
+  background:transparent;
+}
+.today-desk-asset img{
+  width:min(92%, 430px);
+  max-width:430px;
+  height:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 6px 8px rgba(47,43,37,.08));
+}
+.today-action-card{
+  display:block;
+  padding:18px 20px 20px;
+  margin:6px 0 20px;
+  border-width:2px;
+  border-radius:18px 22px 16px 24px;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.7), rgba(255,249,237,.84)),
+    repeating-linear-gradient(to bottom, transparent 0 34px, rgba(127,166,201,.09) 34px 35px),
+    var(--paper-2);
+  box-shadow:2px 4px 0 var(--ink);
+  transform:rotate(-.25deg);
+}
+.route-kicker{
+  display:inline-flex;
+  align-items:center;
+  margin-bottom:12px;
+  padding:5px 11px;
+  min-height:30px;
+  border:1px solid rgba(47,43,37,.26);
+  border-radius:999px;
+  background:var(--yellow-soft);
+  color:#5a4a1a;
+  font-size:13px;
+  font-weight:800;
+}
+.route-main-row{
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+.today-action-card .route-icon{
+  width:58px;
+  height:58px;
+  border-radius:15px 13px 16px 12px;
+  background:var(--paper);
+}
+.today-action-card .route-title{
+  font-family:'Fraunces',serif;
+  font-size:25px;
+  line-height:1.08;
+  margin-bottom:6px;
+  color:var(--ink);
+}
+.today-action-card .route-sub{
+  font-size:15px;
+  line-height:1.35;
+  color:var(--ink-2);
+}
+.today-action-card .route-pill{
+  min-height:28px;
+  font-size:13px;
+  margin-top:10px;
+}
+.action-buttons{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:10px;
+  margin-top:16px;
+  margin-bottom:4px;
+}
+.action-buttons .btn{
+  min-height:52px;
+  padding:13px 18px;
+}
+.action-buttons .btn-soft{
+  min-width:104px;
+}
+.today-paper-strip{
+  width:68%;
+  min-height:30px;
+  margin:4px auto 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:5px 14px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.44), transparent),
+    var(--paper-2);
+  border:1px solid rgba(47,43,37,.14);
+  border-radius:8px 6px 7px 9px;
+  box-shadow:0 4px 8px rgba(47,43,37,.06);
+  transform:rotate(.8deg);
+  font-family:'Caveat',cursive;
+  font-size:18px;
+  font-weight:700;
+  color:var(--terracotta);
+}
+.today-objective-note{
+  position:relative;
+  margin:0 0 16px;
+  min-height:108px;
+  border-radius:15px 18px 14px 20px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.62), rgba(255,249,237,.76)),
+    repeating-linear-gradient(to bottom, transparent 0 30px, rgba(127,166,201,.11) 30px 31px),
+    var(--paper-2);
+  border-color:rgba(47,43,37,.18);
+  box-shadow:0 10px 18px rgba(47,43,37,.08);
+  transform:rotate(-.45deg);
+}
+.today-objective-note .objectif-text{
+  max-width:100%;
+  font-size:25px;
+  position:relative;
+  z-index:2;
+}
+.today-objective-note .h-card{
+  position:relative;
+  z-index:2;
+}
+.asset-tape{
+  position:absolute;
+  top:-13px;
+  left:16px;
+  width:82px;
+  height:30px;
+  z-index:3;
+  background:url("assets/illustrations/today_tape.png") center/contain no-repeat;
+  border:0;
+  box-shadow:none;
+  transform:rotate(-4deg);
+}
+.today-support-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:14px;
+  margin-bottom:2px;
+}
+.today-postit{
+  position:relative;
+  min-height:132px;
+  padding:22px 18px 18px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.3), transparent 56%),
+    var(--yellow-soft);
+  border:1.5px solid rgba(47,43,37,.34);
+  border-radius:12px 15px 11px 16px;
+  box-shadow:2px 3px 0 rgba(47,43,37,.38);
+  overflow:visible;
+  transform:rotate(-.7deg);
+}
+.today-postit::after{
+  content:"";
+  position:absolute;
+  top:-13px;
+  left:50%;
+  width:22px;
+  height:22px;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:#D99A60;
+  border:1.5px solid var(--ink);
+  box-shadow:0 2px 0 rgba(47,43,37,.28);
+}
+.postit-title{
+  font-family:'Fraunces',serif;
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:8px;
+  color:#4f4218;
+}
+.today-help-card{
+  position:relative;
+  padding:16px 18px;
+  border-radius:16px 14px 18px 13px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.56), rgba(255,249,237,.8)),
+    var(--paper-2);
+  border-color:rgba(47,43,37,.16);
+}
+.today-help-card p{
+  font-size:15px;
+  line-height:1.45;
+  color:var(--ink-2);
+  margin:4px 0 12px;
+}
+.today-help-card .btn{
+  min-height:44px;
+  font-size:15px;
+}
+/* Progression -------------------------------------------------------- */
+.progress-paper{
+  padding:16px 14px;
+}
+.progress-paper .progress-grid{
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+.progress-paper .metric{
+  padding:8px 4px;
+  border:1px solid rgba(47,43,37,.14);
+  border-radius:14px 12px 15px 11px;
+  background:rgba(255,255,255,.28);
+}
+.progress-paper .metric-ring{
+  width:88px;
+  height:88px;
+  display:grid;
+  place-items:center;
+}
+.progress-paper .metric-ring svg{display:none;}
+.progress-ring-img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.progress-icon-img{
+  position:relative;
+  z-index:1;
+  width:39px;
+  height:39px;
+  object-fit:contain;
+}
+.progress-paper .metric-label{
+  font-size:13px;
+}
+.progress-paper .metric-value{
+  font-family:'Nunito',sans-serif;
+  font-size:13px;
+  color:var(--ink-2);
+}
+/* Jardin ------------------------------------------------------------- */
+#screen-today .plant-card{
+  align-items:center;
+  padding:18px 20px;
+  min-height:220px;
+}
+#screen-today .plant-img{
+  width:178px;
+  height:190px;
+  min-width:178px;
+  object-fit:contain;
+  filter:drop-shadow(0 12px 10px rgba(86,62,38,.14));
+}
+#screen-today .plant-card::before{
+  content:"";
+  position:absolute;
+  left:26px;
+  bottom:20px;
+  width:96px;
+  height:18px;
+  border-radius:50%;
+  background:rgba(47,43,37,.12);
+  filter:blur(4px);
+  pointer-events:none;
+}
+#screen-today .plant-stage{
+  font-size:19px;
+  line-height:1.2;
+}
+#screen-today .plant-info .muted{
+  font-size:14px!important;
+  line-height:1.35;
+}
+#screen-today .washi{
+  font-size:15px;
+}
+
+@media (min-width:430px){
+  .today-support-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+/* planning ----------------------------------------------------------- */
+.planning-head{margin-bottom:10px;}
+.planning-head .h-display{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.planning-head .week-pill{
+  font-family:'Caveat',cursive;
+  font-size:22px;
+  color:var(--terracotta);
+  font-weight:600;
+}
+
+.pfmp-card{
+  margin:12px 0 16px;
+  padding:18px 16px 16px;
+  background:
+    linear-gradient(110deg,rgba(255,255,255,.48),rgba(255,255,255,0) 58%),
+    repeating-linear-gradient(to bottom,transparent 0,transparent 25px,rgba(127,166,201,.08) 26px),
+    var(--paper-2);
+  border:1.5px solid var(--ink);
+  border-radius:15px 19px 13px 18px;
+  box-shadow:2px 4px 0 rgba(47,43,37,.82);
+}
+.pfmp-card .h-card{margin-bottom:10px;}
+.pfmp-card.is-close{border-color:rgba(201,120,74,.9);}
+.pfmp-card.is-week{background:linear-gradient(110deg,rgba(201,120,74,.12),rgba(255,255,255,0) 55%),var(--paper-2);}
+.pfmp-card.is-active{background:linear-gradient(110deg,rgba(123,155,120,.18),rgba(255,255,255,0) 58%),var(--paper-2);}
+.pfmp-topline{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  margin-bottom:8px;
+}
+.pfmp-countdown{
+  flex-shrink:0;
+  min-width:86px;
+  padding:10px 12px;
+  text-align:center;
+  font-family:'Fraunces',Georgia,serif;
+  font-size:32px;
+  font-weight:700;
+  line-height:1;
+  color:var(--terracotta);
+  background:var(--yellow-soft);
+  border:1.5px solid rgba(47,43,37,.65);
+  border-radius:14px 18px 13px 16px;
+  box-shadow:1px 2px 0 rgba(47,43,37,.42);
+}
+.pfmp-copy{min-width:0;flex:1;}
+.pfmp-main{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:700;
+  font-size:19px;
+  line-height:1.2;
+  color:var(--ink);
+}
+.pfmp-sub,.pfmp-date{
+  margin-top:6px;
+  font-size:14px;
+  line-height:1.35;
+  color:var(--ink-2);
+}
+.pfmp-date{
+  font-weight:700;
+  color:var(--terracotta);
+}
+.pfmp-chips{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px;
+  margin:12px 0 4px;
+}
+.pfmp-chip{
+  padding:7px 6px;
+  background:rgba(255,255,255,.42);
+  border:1px solid rgba(47,43,37,.24);
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+  text-align:center;
+  color:var(--ink);
+}
+.pfmp-timeline{margin-top:14px;}
+.pfmp-track-labels{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  font-size:12px;
+  font-weight:700;
+  color:var(--ink-2);
+}
+.pfmp-track{
+  position:relative;
+  height:26px;
+  margin:7px 8px 4px;
+}
+.pfmp-track::before{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:12px;
+  border-top:3px solid rgba(47,43,37,.24);
+}
+.pfmp-track-fill{
+  position:absolute;
+  left:0;top:12px;
+  width:var(--pfmp-percent,0%);
+  border-top:4px solid var(--sage);
+}
+.pfmp-dot{
+  position:absolute;
+  left:var(--pfmp-percent,0%);
+  top:50%;
+  width:16px;height:16px;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:var(--terracotta);
+  border:2px solid var(--paper-2);
+  box-shadow:0 0 0 1px rgba(47,43,37,.55);
+}
+.pfmp-percent{
+  font-size:14px;
+  font-weight:800;
+  color:var(--ink);
+  text-align:center;
+  line-height:1.35;
+}
+.pfmp-human{
+  margin-top:3px;
+  font-size:13px;
+  line-height:1.35;
+  color:var(--ink-2);
+  text-align:center;
+}
+.pfmp-small-step{
+  margin-top:14px;
+  padding:12px 13px;
+  background:linear-gradient(135deg,rgba(123,155,120,.18),rgba(255,255,255,.24)),var(--paper-2);
+  border:1.4px solid rgba(47,43,37,.42);
+  border-radius:13px 16px 12px 15px;
+  font-size:14px;
+  line-height:1.35;
+  color:var(--ink);
+}
+.pfmp-step-label{
+  display:block;
+  margin-bottom:3px;
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:700;
+  color:var(--ink);
+}
+
+.planning-board{
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  border-radius:14px 18px 12px 20px;
+  padding:14px 10px 14px 14px;
+  box-shadow:2px 4px 0 var(--ink);
+  position:relative;
+  overflow:hidden;
+}
+.planning-board::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(to right, rgba(127,166,201,0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(127,166,201,0.08) 1px, transparent 1px);
+  background-size:14px 14px;
+  pointer-events:none;
+}
+.planning-board > *{position:relative;z-index:1;}
+
+.board-header{
+  display:grid;
+  grid-template-columns:34px repeat(5,1fr);
+  gap:4px;
+  margin-bottom:6px;
+  padding-bottom:8px;
+  border-bottom:1.2px dashed rgba(47,43,37,0.25);
+}
+.board-header .corner{}
+.board-header .col-day{
+  text-align:center;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.06em;
+  color:var(--ink);
+  text-transform:uppercase;
+  cursor:pointer;
+  padding:4px 2px;
+  border-radius:8px;
+  transition:background .15s ease;
+}
+.board-header .col-day .num{
+  display:block;
+  font-family:'Fraunces',serif;
+  font-size:18px;
+  font-weight:600;
+  margin-top:1px;
+  letter-spacing:0;
+}
+.board-header .col-day.today{
+  background:var(--ink);
+  color:var(--paper);
+}
+
+.board-grid{
+  display:grid;
+  grid-template-columns:34px repeat(5,1fr);
+  gap:3px;
+}
+.board-time{
+  font-size:12px;
+  font-weight:700;
+  color:var(--ink-2);
+  text-align:right;
+  padding:6px 6px 0 0;
+  font-variant-numeric:tabular-nums;
+  border-right:1.2px dashed rgba(47,43,37,0.18);
+  min-height:48px;
+}
+.board-cell{
+  min-height:48px;
+  border-radius:6px 8px 5px 9px;
+  position:relative;
+  padding:2px;
+}
+.board-block{
+  position:absolute;
+  inset:2px;
+  border-radius:6px 8px 5px 9px;
+  border:1.3px solid rgba(47,43,37,0.55);
+  padding:4px 6px;
+  font-size:12px;
+  font-weight:700;
+  line-height:1.15;
+  color:var(--ink);
+  box-shadow:1px 1.5px 0 rgba(47,43,37,0.35);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.board-block.maths{background:var(--blue-soft);}
+.board-block.enspro{background:var(--sage-soft);}
+.board-block.francais{background:var(--yellow-soft);}
+.board-block.espagnol{background:var(--pink-soft);}
+.board-block.eps{background:#FAD3B5;}
+.board-block.pse{background:#DCD0E5;}
+.board-block.hgemc{background:#BEDDD9;}
+.board-block.coint{background:#D6E8C8;}
+.board-block.real{background:#C8E5E1;}
+.board-block.lunch{
+  background:repeating-linear-gradient(45deg,transparent 0 4px,rgba(47,43,37,0.07) 4px 8px),var(--paper);
+  border-style:dashed;
+  border-color:rgba(47,43,37,0.3);
+  color:var(--ink-2);
+  font-weight:500;
+  font-size:12px;
+  font-style:italic;
+  box-shadow:none;
+}
+
+.day-detail{
+  margin-top:18px;
+}
+.day-detail .day-detail-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:10px;
+  padding-left:4px;
+}
+.day-detail .day-detail-head .eyebrow{margin:0;}
+.day-detail .day-detail-head .squiggle{flex:1;height:8px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 8'><path d='M2 4 Q10 1 20 4 T40 4 T60 4 T78 4' stroke='%232F2B25' stroke-width='1' fill='none' opacity='.18'/></svg>") repeat-x center;background-size:80px 8px;}
+
+.timeline{
+  position:relative;
+  padding-left:42px;
+}
+.time-row{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  position:relative;
+  min-height:38px;
+  padding-bottom:6px;
+}
+.time-label{
+  position:absolute;
+  left:-42px;
+  top:8px;
+  width:36px;
+  text-align:right;
+  font-size:12px;
+  font-weight:700;
+  color:var(--ink-2);
+  font-variant-numeric:tabular-nums;
+}
+.time-row::before{
+  content:"";
+  position:absolute;
+  left:-6px;
+  top:10px;
+  bottom:0;
+  width:1px;
+  background:var(--line);
+}
+.time-row::after{
+  content:"";
+  position:absolute;
+  left:-9px;
+  top:9px;
+  width:7px;height:7px;
+  border-radius:50%;
+  background:var(--paper);
+  border:1.5px solid var(--line-2);
+}
+.lesson{
+  flex:1;
+  padding:8px 12px;
+  border-radius:8px 11px 7px 10px;
+  border:1.4px solid var(--ink);
+  background:var(--paper-2);
+  box-shadow:1px 2px 0 var(--ink);
+}
+.lesson-name{font-weight:700;font-size:14px;line-height:1.2;}
+.lesson-meta{font-size:12px;color:var(--ink-2);margin-top:1px;}
+.lesson.maths{background:var(--blue-soft);}
+.lesson.enspro{background:var(--sage-soft);}
+.lesson.francais{background:var(--yellow-soft);}
+.lesson.espagnol{background:var(--pink-soft);}
+.lesson.eps{background:#FAD3B5;}
+.lesson.pse{background:#DCD0E5;}
+.lesson.hgemc{background:#BEDDD9;}
+.lesson.coint{background:#D6E8C8;}
+.lesson.real{background:#C8E5E1;}
+.lesson.empty{background:transparent;border:1px dashed var(--line-2);box-shadow:none;color:var(--ink-3);font-style:italic;font-weight:500;}
+
+.planning-note{
+  margin-top:14px;
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  padding:12px 14px;
+  background:var(--paper-2);
+  border-left:3px solid var(--terracotta);
+  border-radius:4px 12px 12px 4px;
+  font-size:13px;
+  line-height:1.4;
+}
+.planning-note svg{width:20px;height:20px;flex-shrink:0;fill:var(--terracotta);margin-top:1px;}
+
+/* coach -------------------------------------------------------------- */
+.coach-head{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:14px;
+}
+.coach-head .flux-mascot{width:84px;height:84px;min-width:84px;min-height:84px;}
+.coach-head .titles{flex:1;}
+.coach-head .h-display{font-size:28px;}
+.coach-head .sub{font-size:15px;color:var(--ink-2);margin-top:2px;line-height:1.35;}
+.coach-intent{
+  margin:0 0 12px;
+  padding:12px 14px;
+  background:var(--paper-2);
+  border:1.4px solid var(--line-2);
+  border-radius:14px 18px 13px 16px;
+  box-shadow:0 8px 18px rgba(47,43,37,.07);
+  font-size:14px;
+  line-height:1.4;
+  color:var(--ink-2);
+}
+
+.chat-area{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-bottom:12px;
+  min-height:260px;
+}
+.bubble{
+  max-width:85%;
+  padding:12px 14px;
+  border-radius:14px 16px 14px 6px;
+  border:1px solid var(--line);
+  box-shadow:1px 2px 0 rgba(47,43,37,0.05);
+  font-size:15px;
+  line-height:1.5;
+  position:relative;
+}
+.bubble.coach{
+  background:var(--paper-2);
+  align-self:flex-start;
+  color:var(--ink);
+}
+.bubble.user{
+  background:var(--blue-soft);
+  border-color:var(--blue);
+  align-self:flex-end;
+  border-radius:14px 16px 6px 14px;
+}
+.bubble .who{
+  font-family:'Caveat',cursive;
+  font-size:15px;
+  font-weight:700;
+  color:var(--terracotta);
+  display:block;
+  margin-bottom:2px;
+}
+.bubble.user .who{color:#1f4060;}
+.bubble img{
+  max-width:200px;
+  border-radius:8px;
+  margin-top:6px;
+  border:1px solid var(--line);
+}
+.bubble .speak-btn{
+  margin-top:6px;
+  font-size:12px;
+  color:var(--ink-2);
+  background:rgba(255,255,255,.4);
+  padding:3px 10px;
+  border-radius:100px;
+  border:1px solid var(--line);
+  cursor:pointer;
+}
+.typing-dots{display:inline-flex;gap:4px;padding:4px 0;}
+.typing-dots span{
+  width:7px;height:7px;border-radius:50%;background:var(--ink-3);
+  animation:bounce 1.2s infinite ease-in-out;
+}
+.typing-dots span:nth-child(2){animation-delay:.15s;}
+.typing-dots span:nth-child(3){animation-delay:.3s;}
+@keyframes bounce{0%,80%,100%{transform:translateY(0);opacity:.4;}40%{transform:translateY(-5px);opacity:1;}}
+
+.suggestions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:10px;
+}
+.sugg-chip{
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  border-radius:100px;
+  padding:7px 14px;
+  font-size:13px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:1px 2px 0 var(--ink);
+  transition:transform .12s ease;
+}
+.sugg-chip:active{transform:translate(1px,2px);box-shadow:none;}
+
+.coach-input{
+  display:flex;
+  align-items:flex-end;
+  gap:8px;
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  border-radius:18px 20px 16px 22px;
+  padding:8px 8px 8px 14px;
+  box-shadow:2px 3px 0 var(--ink);
+}
+.coach-input textarea{
+  flex:1;
+  border:none;background:transparent;
+  resize:none;
+  font-family:inherit;
+  font-size:15px;
+  line-height:1.4;
+  max-height:120px;
+  min-height:24px;
+  padding:8px 0;
+}
+.icon-btn{
+  width:38px;height:38px;
+  border-radius:50%;
+  background:var(--paper);
+  border:1.5px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  box-shadow:1px 2px 0 var(--ink);
+  transition:transform .12s ease;
+}
+.icon-btn:active{transform:translate(1px,2px);box-shadow:none;}
+.icon-btn svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.icon-btn.send{background:var(--sage);border-color:var(--ink);}
+.icon-btn.send svg{stroke:#fff;}
+.icon-btn.recording{background:var(--terracotta);}
+.icon-btn.recording svg{stroke:#fff;}
+
+.photo-preview{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+  padding:8px 10px;
+  background:var(--paper-2);
+  border:1px dashed var(--line-2);
+  border-radius:10px;
+  font-size:13px;
+}
+.photo-preview img{width:42px;height:42px;object-fit:cover;border-radius:6px;}
+.photo-preview button{margin-left:auto;color:var(--terracotta);font-weight:700;font-size:13px;}
+
+/* outils ------------------------------------------------------------- */
+.tools-head{margin-bottom:18px;}
+.tools-head .tools-help{
+  margin-top:6px;
+  font-size:14px;
+  line-height:1.35;
+  color:var(--ink-2);
+}
+.tools-entry{
+  margin-bottom:18px;
+}
+.tools-entry .h-card{
+  margin-bottom:12px;
+}
+.need-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.need-btn{
+  min-height:58px;
+  padding:12px 10px;
+  border:1.5px solid var(--ink);
+  border-radius:14px 17px 13px 16px;
+  background:var(--paper-2);
+  box-shadow:1px 2px 0 var(--ink);
+  font-weight:800;
+  font-size:15px;
+  line-height:1.15;
+}
+.need-btn.primary{
+  background:linear-gradient(135deg,rgba(123,155,120,.22),rgba(255,255,255,.1)),var(--paper-2);
+}
+.tools-section{
+  margin:18px 0;
+}
+.tools-section-head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:10px;
+  margin:0 4px 10px;
+}
+.tools-section-head .h-section{
+  font-size:21px;
+}
+.tools-section-head .section-note{
+  font-family:'Caveat',cursive;
+  font-size:18px;
+  color:var(--terracotta);
+  line-height:1.1;
+}
+.tools-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.tool-card{
+  text-align:left;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  padding:16px;
+  cursor:pointer;
+  transition:transform .15s ease;
+  min-height:118px;
+}
+.tool-card.primary-tool{
+  background:linear-gradient(135deg,rgba(123,155,120,.18),rgba(255,255,255,.1)),var(--paper-2);
+  border-width:1.7px;
+}
+.tool-card.command{
+  min-height:auto;
+}
+.tool-card.wide{
+  grid-column:1/-1;
+}
+.tool-card:active{transform:scale(.98);}
+.tool-icon{
+  width:42px;height:42px;
+  border-radius:11px 13px 10px 12px;
+  display:flex;align-items:center;justify-content:center;
+}
+.tool-icon svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.tool-name{font-family:'Fraunces',serif;font-weight:600;font-size:16px;line-height:1.2;}
+.tool-desc{font-size:12px;color:var(--ink-2);line-height:1.3;}
+
+.tool-icon.bg-sage{background:var(--sage-soft);}
+.tool-icon.bg-terra{background:var(--terracotta-soft);}
+.tool-icon.bg-blue{background:var(--blue-soft);}
+.tool-icon.bg-yellow{background:var(--yellow-soft);}
+.tool-icon.bg-pink{background:var(--pink-soft);}
+.tool-icon.bg-violet{background:#DCD0E5;}
+.tool-icon.bg-turquoise{background:#C8E5E1;}
+
+.tool-card.full{grid-column:1/-1;flex-direction:row;align-items:center;min-height:auto;}
+.tool-card.full .tool-icon{flex-shrink:0;}
+.tool-card.full .tool-text{flex:1;}
+.tool-actions{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:4px;
+}
+.tool-actions .btn{
+  min-height:42px;
+  padding:9px 12px;
+}
+.focus-steps,.mini-steps{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:10px;
+}
+.focus-steps li,.mini-steps li{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  font-size:14px;
+  line-height:1.35;
+  color:var(--ink);
+}
+.focus-steps .num,.mini-steps .num{
+  flex-shrink:0;
+  width:24px;height:24px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--sage-soft);
+  border:1px solid rgba(47,43,37,.3);
+  font-weight:800;
+  font-size:12px;
+}
+.ai-rules-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.ai-rule-box{
+  padding:13px;
+  background:var(--paper-2);
+  border:1.4px solid var(--line-2);
+  border-radius:13px 16px 12px 15px;
+}
+.ai-rule-box h3{
+  font-family:'Fraunces',Georgia,serif;
+  font-size:17px;
+  margin-bottom:8px;
+}
+.ai-rule-box ul{
+  padding-left:18px;
+  font-size:14px;
+  line-height:1.35;
+}
+.ai-rule-box li+li{margin-top:6px;}
+.tool-progress{
+  margin:10px 0 16px;
+  padding:12px;
+  background:rgba(123,155,120,.12);
+  border:1.3px solid rgba(47,43,37,.26);
+  border-radius:14px 17px 13px 16px;
+}
+.tool-progress span{
+  display:block;
+  font-size:14px;
+  font-weight:800;
+  margin-bottom:8px;
+  color:var(--ink);
+}
+.tool-progress-bar{
+  height:12px;
+  border:1.2px solid rgba(47,43,37,.34);
+  border-radius:999px;
+  background:var(--paper-2);
+  overflow:hidden;
+}
+.tool-progress-fill{
+  display:block;
+  height:100%;
+  width:0;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--sage),var(--terracotta));
+  transition:width .18s ease;
+}
+.resource-category{
+  margin:0 0 16px;
+}
+.resource-category-title{
+  font-family:'Fraunces',Georgia,serif;
+  font-size:17px;
+  font-weight:650;
+  margin:0 0 8px;
+}
+.resource-cards{
+  display:grid;
+  gap:10px;
+}
+.resource-card{
+  padding:13px;
+  background:var(--paper-2);
+  border:1.4px solid var(--line-2);
+  border-radius:14px 17px 13px 16px;
+  box-shadow:1px 2px 0 rgba(47,43,37,.24);
+}
+.resource-card-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+}
+.resource-card h3{
+  font-family:'Fraunces',Georgia,serif;
+  font-size:17px;
+  margin:0 0 4px;
+}
+.resource-card p{
+  font-size:14px;
+  line-height:1.35;
+  color:var(--ink-2);
+  margin:0;
+}
+.resource-card .btn{
+  min-height:40px;
+  padding:8px 12px;
+  flex-shrink:0;
+}
+.resource-hint{
+  display:block;
+  margin-top:8px;
+  font-size:12px;
+  line-height:1.35;
+  color:var(--ink-2);
+}
+
+/* badges ------------------------------------------------------------- */
+.badges-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+.badge{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px 8px 8px;
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  border-radius:100px;
+  box-shadow:1px 2px 0 var(--ink);
+  font-size:13px;
+  font-weight:700;
+}
+.badge .b-icon{
+  width:26px;height:26px;
+  border-radius:50%;
+  background:var(--yellow-soft);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.badge .b-icon svg{width:16px;height:16px;}
+.badge.locked{opacity:.45;}
+.badge.locked .b-icon{background:var(--paper-3);}
+
+/* bottom nav --------------------------------------------------------- */
+.bottom-nav{
+  position:fixed;
+  bottom:0;left:0;right:0;
+  z-index:50;
+  padding:10px 14px calc(10px + var(--safe-b));
+  background:linear-gradient(180deg,rgba(247,241,230,0) 0%,var(--paper) 30%);
+  pointer-events:none;
+}
+.bottom-nav-inner{
+  pointer-events:auto;
+  max-width:520px;
+  margin:0 auto;
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  border-radius:22px 24px 20px 26px;
+  box-shadow:2px 4px 0 var(--ink);
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  padding:6px;
+}
+.nav-btn{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:2px;
+  padding:8px 4px;
+  border-radius:14px 16px 12px 18px;
+  font-size:12px;
+  font-weight:700;
+  color:var(--ink-2);
+  letter-spacing:.02em;
+  transition:background .18s ease,color .18s ease;
+}
+.nav-btn svg{width:24px;height:24px;stroke:var(--ink-2);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:stroke .18s ease;}
+.nav-btn.active{background:var(--ink);color:var(--paper);}
+.nav-btn.active svg{stroke:var(--paper);}
+
+/* modal -------------------------------------------------------------- */
+.modal-bg{
+  position:fixed;
+  inset:0;
+  z-index:200;
+  background:rgba(47,43,37,0.45);
+  display:none;
+  align-items:flex-end;
+  justify-content:center;
+  padding:14px 14px calc(14px + var(--safe-b));
+  animation:fadein .25s ease;
+}
+.modal-bg.show{display:flex;}
+.modal{
+  background:var(--paper);
+  border:1.5px solid var(--ink);
+  border-radius:22px 25px 20px 24px;
+  width:100%;
+  max-width:min(520px, calc(100vw - 28px));
+  max-height:min(82vh, 720px);
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  padding:20px 18px calc(96px + var(--safe-b));
+  box-shadow:0 18px 36px rgba(47,43,37,0.18);
+  animation:slideup .3s cubic-bezier(.32,.72,0,1);
+  scrollbar-width:thin;
+  scrollbar-color:rgba(47,43,37,.25) transparent;
+}
+.modal::-webkit-scrollbar{width:8px;}
+.modal::-webkit-scrollbar-thumb{background:rgba(47,43,37,.22);border-radius:20px;}
+@keyframes slideup{from{transform:translateY(100%);}to{transform:none;}}
+.modal-handle{
+  width:42px;height:5px;
+  background:var(--line-2);
+  border-radius:100px;
+  margin:0 auto 14px;
+}
+.modal-head{
+  position:sticky;
+  top:-20px;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:14px;
+  gap:10px;
+  padding:0 0 10px;
+  background:linear-gradient(180deg,var(--paper) 72%,rgba(247,241,230,0));
+}
+.modal-head .h-section{font-size:22px;}
+.modal-close{
+  width:36px;height:36px;
+  border-radius:50%;
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;
+  font-weight:700;
+  flex-shrink:0;
+}
+
+/* pipeline ----------------------------------------------------------- */
+.pipeline-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.pipeline-step{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px;
+  background:var(--paper-2);
+  border:1.5px solid var(--line-2);
+  border-radius:14px 16px 12px 18px;
+  cursor:pointer;
+  transition:background .2s ease;
+}
+.pipeline-step.done{background:var(--sage-soft);border-color:var(--sage);}
+.pipeline-step .num{
+  width:34px;height:34px;
+  border-radius:50%;
+  background:var(--paper);
+  border:1.5px solid var(--ink);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;
+  font-weight:700;
+  font-size:15px;
+  flex-shrink:0;
+}
+.pipeline-step.done .num{background:var(--sage);color:#fff;border-color:var(--sage);}
+.pipeline-step .step-body{flex:1;}
+.pipeline-step .step-title{font-weight:700;font-size:15px;line-height:1.2;}
+.pipeline-step .step-desc{font-size:12px;color:var(--ink-2);margin-top:2px;}
+.pipeline-step.done .step-title{text-decoration:line-through;}
+
+/* timer -------------------------------------------------------------- */
+.timer-display{
+  font-family:'Fraunces',serif;
+  font-size:72px;
+  font-weight:600;
+  text-align:center;
+  letter-spacing:-2px;
+  color:var(--ink);
+  margin:24px 0 8px;
+  font-variant-numeric:tabular-nums;
+}
+.timer-label{
+  text-align:center;
+  font-family:'Caveat',cursive;
+  font-size:20px;
+  color:var(--terracotta);
+  margin-bottom:24px;
+}
+.timer-controls{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+}
+.timer-presets{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin-top:14px;
+}
+
+/* qqoqccp ------------------------------------------------------------ */
+.qqoqccp-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.qq-item{
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+}
+.qq-item label{
+  display:block;
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:15px;
+  color:var(--terracotta);
+  margin-bottom:4px;
+}
+.qq-item input{
+  width:100%;
+  border:none;
+  border-bottom:1.5px dashed var(--line-2);
+  background:transparent;
+  padding:6px 0;
+  font-size:15px;
+}
+.qq-item .hint{font-size:12px;color:var(--ink-3);margin-bottom:6px;}
+
+/* rules / lists ------------------------------------------------------ */
+.rule-list{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.rule-list li{
+  display:flex;
+  gap:10px;
+  padding:12px 14px;
+  background:var(--paper-2);
+  border:1px solid var(--line);
+  border-left:3px solid var(--sage);
+  border-radius:4px 12px 12px 4px;
+  font-size:14px;
+  line-height:1.4;
+}
+.rule-list li.warn{border-left-color:var(--terracotta);}
+.rule-list li .num{
+  font-family:'Fraunces',serif;
+  font-weight:700;
+  color:var(--terracotta);
+  font-size:18px;
+  flex-shrink:0;
+  line-height:1;
+  padding-top:1px;
+}
+.resource-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.resource-list a{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px;
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  border-radius:14px 16px 12px 18px;
+  text-decoration:none;
+  color:var(--ink);
+  box-shadow:1px 2px 0 var(--ink);
+  font-weight:600;
+}
+.resource-list a .ric{
+  width:34px;height:34px;
+  border-radius:8px;
+  background:var(--blue-soft);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.resource-list a .ric svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+.resource-list a .arr{margin-left:auto;color:var(--ink-2);}
+.resource-list a small{display:block;font-size:12px;font-weight:500;color:var(--ink-2);margin-top:2px;}
+
+.settings-row{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:16px;
+}
+.settings-row label{
+  font-size:13px;
+  font-weight:700;
+  color:var(--ink-2);
+}
+.settings-row input{
+  border:1.5px solid var(--line-2);
+  background:var(--paper-2);
+  padding:10px 12px;
+  border-radius:10px;
+  font-size:14px;
+}
+.settings-row .hint{font-size:12px;color:var(--ink-3);margin-top:2px;}
+
+/* status note -------------------------------------------------------- */
+.toast{
+  position:fixed;
+  bottom:calc(110px + var(--safe-b));
+  left:50%;
+  transform:translateX(-50%) translateY(20px);
+  background:var(--ink);
+  color:var(--paper);
+  padding:10px 18px;
+  border-radius:100px;
+  font-size:13px;
+  font-weight:600;
+  z-index:300;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .25s ease,transform .25s ease;
+  box-shadow:0 6px 20px rgba(47,43,37,0.3);
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+
+/* scroll safety ------------------------------------------------------- */
+.scene,
+.scene *,
+.grain,
+.mesh,
+.star,
+.hero-bg,
+.hero-aurora,
+.hero-glow-tr,
+.city-wrap,
+.city-wrap *,
+.atelier-sketch-lines,
+.atelier-sketch-lines *,
+.atelier-garden-bg,
+.atelier-garden-bg *,
+.flux-planet-art,
+.flux-planet-art *,
+.today-plant-illustration,
+.today-plant-illustration *,
+.objective-sprout,
+.objective-sprout *,
+.objective-plant,
+.objective-plant *,
+body::before{
+  pointer-events:none!important;
+}
+
+.scroll,
+.carnet-scroll,
+.atelier-scroll{
+  overflow-y:auto;
+  overflow-x:hidden;
+  -webkit-overflow-scrolling:touch;
+  overscroll-behavior-y:auto;
+  touch-action:auto;
+  padding-bottom:calc(140px + env(safe-area-inset-bottom));
+}
+
+.cours-scroll{
+  overflow-x:auto;
+  overflow-y:visible;
+  -webkit-overflow-scrolling:touch;
+  scroll-snap-type:x mandatory;
+  touch-action:pan-x pan-y;
+}
+
+/* responsive --------------------------------------------------------- */
+@media (max-width:380px){
+  .h-display{font-size:30px;}
+  .flux-mascot{width:96px;height:96px;min-width:96px;min-height:96px;}
+  .flux-mascot.sm{width:54px;height:54px;min-width:54px;min-height:54px;}
+  .today-desk-asset img{width:min(96%, 360px);}
+  .progress-paper .metric-ring{width:78px;height:78px;}
+  .progress-icon-img{width:35px;height:35px;}
+  #screen-today .plant-card{gap:10px;padding:16px 14px;min-height:204px;}
+  #screen-today .plant-img{width:138px;height:160px;min-width:138px;}
+  .row-cards{grid-template-columns:1fr;}
+  .progress-grid{grid-template-columns:repeat(2,1fr);}
+  .need-grid{grid-template-columns:1fr;}
+  .tools-grid{grid-template-columns:1fr;}
+  .ai-rules-grid{grid-template-columns:1fr;}
+  .resource-card-head{flex-direction:column;align-items:stretch;}
+  .resource-card .btn{width:100%;}
+  .timer-display{font-size:60px;}
+}
+@media (min-width:521px){
+  .screen{padding-left:28px;padding-right:28px;}
+}
+</style>
+</head>
+<body>
+
+<div id="app">
+<main>
+
+<!-- ============== SCREEN AUJOURD'HUI ============== -->
+<section id="screen-today" class="screen active">
+  <div class="today-head">
+    <div class="titles">
+      <h1 class="h-display">Aujourd'hui</h1>
+      <div class="date" id="todayDate">samedi 26 avril 2026</div>
+    </div>
+  <div class="mascot-wrap">
+      <img class="flux-mascot" src="assets/illustrations/flux-planet-handdrawn.png" alt="Flux" width="96" height="96" onerror="this.style.display='none'">
+    </div>
+  </div>
+
+  <div class="today-desk-asset" aria-hidden="true">
+    <img src="assets/illustrations/today_desk_carnet_alpha.png" alt="" onerror="this.style.display='none'">
+  </div>
+
+  <!-- action prioritaire -->
+  <article class="paper card-route today-action-card" id="cardRoute">
+    <div class="route-kicker">Une seule action</div>
+    <div class="route-main-row">
+      <div class="route-icon">
+        <svg viewBox="0 0 24 24"><path d="M5 4 h11 l3 3 v13 H5 z"/><path d="M16 4 v3 h3"/><path d="M8 11 h8 M8 15 h6"/></svg>
+      </div>
+      <div class="route-body">
+        <div class="route-title" id="routeTitle">Mathématiques</div>
+        <div class="route-sub" id="routeSub">Exercices sur les fonctions</div>
+        <span class="route-pill" id="routePill"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="#1f4060" stroke-width="1.5"><circle cx="5" cy="5" r="3.5"/><path d="M5 3 v2 l1.5 1"/></svg>Maintenant</span>
+      </div>
+    </div>
+    <div class="action-buttons">
+      <button class="btn btn-primary" id="startTodayBtn" type="button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="8"/><path d="M8 7 l5 3 l-5 3 z" fill="#fff"/></svg>
+        Je commence
+      </button>
+      <button class="btn btn-soft" id="blockTodayBtn" type="button">Je bloque</button>
+    </div>
+  </article>
+
+  <div class="today-paper-strip">Un petit pas suffit.</div>
+
+  <article class="paper daily-routine-card" id="todayRoutineCard">
+    <div class="routine-head">
+      <div>
+        <div class="h-card">Routine du jour</div>
+        <div class="routine-note" id="routineNote">Une étape à la fois.</div>
+      </div>
+      <span class="washi" id="routineStatus">0/3</span>
+    </div>
+    <ul class="routine-list" id="routineList"></ul>
+  </article>
+
+  <article class="paper week-card" id="weekSummaryCard">
+    <div class="h-card">Cette semaine</div>
+    <div class="week-list" id="weekSummaryList"></div>
+  </article>
+
+  <!-- objectif du jour -->
+  <article class="paper card-objectif today-objective-note">
+    <div class="asset-tape" aria-hidden="true"></div>
+    <div class="h-card">
+      Objectif du jour
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="#7B9B78"><path d="M8 1 Q5 5 5 8 Q5 12 8 15 Q11 12 11 8 Q11 5 8 1 Z M8 4 Q9 6 9 8 Q9 10 8 12 Q7 10 7 8 Q7 6 8 4 Z"/></svg>
+    </div>
+    <div class="objectif-text" id="objectifText">15 min de révision, c'est toujours utile.</div>
+  </article>
+
+  <div class="today-support-grid">
+    <aside class="post-it today-postit">
+      <div class="postit-title">À ne pas oublier</div>
+      <ul class="reminders-list" id="remindersList"></ul>
+    </aside>
+
+    <article class="paper today-help-card">
+      <div class="h-card">Si ça bloque</div>
+      <p>Flux peut t’aider à lire la consigne et trouver la première étape.</p>
+      <button class="btn btn-soft" type="button" data-screen="coach">Parler à Flux</button>
+    </article>
+  </div>
+
+  <!-- progression -->
+  <div class="section-title">
+    <h2 class="h-section">Où j'en suis</h2>
+    <div class="squiggle"></div>
+  </div>
+  <article class="paper progress-paper">
+    <div class="progress-grid" id="progressGrid"></div>
+  </article>
+
+  <!-- plante d'autonomie -->
+  <div class="section-title">
+    <h2 class="h-section">Jardin d'autonomie</h2>
+    <span class="washi" id="streakBadge">jour 1</span>
+    <div class="squiggle"></div>
+  </div>
+  <article class="paper plant-card tilt-l">
+    <img class="plant-img" id="plantImg" src="assets/illustrations/plant_stage_02_clean.png" alt="Plante d'autonomie">
+    <div class="plant-info">
+      <div class="plant-stage" id="plantStage">Une petite pousse</div>
+      <div class="muted" style="font-size:13px;margin-top:2px;" id="plantHint">Continue d'avancer chaque jour pour la faire grandir.</div>
+      <div class="plant-status" id="plantStatus">pas encore arrosée</div>
+      <div class="plant-bar"><div class="plant-bar-fill" id="plantBar" style="width:20%;"></div></div>
+      <div class="plant-traces" id="plantTraces"></div>
+      <button class="btn btn-soft" type="button" id="openAutonomyBtn">Mon autonomie</button>
+    </div>
+  </article>
+</section>
+
+<!-- ============== SCREEN PLANNING ============== -->
+<section id="screen-planning" class="screen">
+  <div class="planning-head">
+    <h1 class="h-display">Planning</h1>
+    <div class="week-pill" id="planningWeek">semaine du 27 avril</div>
+  </div>
+
+  <article class="pfmp-card" aria-label="Repère PFMP">
+    <div class="h-card" id="pfmpTitle">Cap sur la PFMP</div>
+    <div class="pfmp-topline">
+      <div class="pfmp-countdown" id="pfmpCountdown">J-35</div>
+      <div class="pfmp-copy">
+        <div class="pfmp-main" id="pfmpMain">Tu avances vers ton stage</div>
+        <div class="pfmp-date" id="pfmpDate">Départ PFMP · lundi 8 juin</div>
+        <div class="pfmp-sub" id="pfmpSub">Tu avances vers ton stage, un pas après l'autre.</div>
+      </div>
+    </div>
+    <div class="pfmp-chips">
+      <span class="pfmp-chip" id="pfmpDaysChip">35 jours</span>
+      <span class="pfmp-chip" id="pfmpWeeksChip">5 semaines</span>
+      <span class="pfmp-chip">1 action aujourd'hui</span>
+    </div>
+    <div class="pfmp-timeline" style="--pfmp-percent:0%">
+      <div class="pfmp-track-labels">
+        <span>Aujourd'hui</span>
+        <span>Départ PFMP</span>
+      </div>
+      <div class="pfmp-track" aria-hidden="true">
+        <div class="pfmp-track-fill"></div>
+        <div class="pfmp-dot"></div>
+      </div>
+      <div class="pfmp-percent" id="pfmpPercentText">La préparation commence bientôt.</div>
+      <div class="pfmp-human" id="pfmpHumanText"></div>
+    </div>
+    <div class="pfmp-small-step"><span class="pfmp-step-label">Petit pas du jour</span><span id="pfmpActionText">Vérifie Pronote ou relis 1 fiche ENS PRO.</span></div>
+  </article>
+
+  <div class="planning-board">
+    <div class="board-header" id="boardHeader"></div>
+    <div class="board-grid" id="boardGrid"></div>
+  </div>
+
+  <div class="day-detail">
+    <div class="day-detail-head">
+      <span class="eyebrow" id="dayHeader">Lundi 27</span>
+      <div class="squiggle"></div>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+
+  <div class="planning-note">
+    <svg viewBox="0 0 24 24"><path d="M12 2 L2 22 H22 Z M12 9 v6 M12 18 v.5"/></svg>
+    <div>Les horaires peuvent changer. <strong>Pense à vérifier Pronote</strong> avant chaque journée.</div>
+  </div>
+</section>
+
+<!-- ============== SCREEN COACH ============== -->
+<section id="screen-coach" class="screen">
+  <div class="coach-head">
+    <img class="flux-mascot" src="assets/illustrations/flux-planet-handdrawn.png" alt="Flux" width="72" height="72" onerror="this.style.display='none'">
+    <div class="titles">
+      <h1 class="h-display">Coach Flux</h1>
+      <div class="sub">Je t'aide à démarrer, pas à finir à ta place.</div>
+    </div>
+  </div>
+
+  <div class="suggestions" id="suggestions">
+    <button class="sugg-chip" data-sugg="commencer">Je veux commencer</button>
+    <button class="sugg-chip" data-sugg="comprendre">Comprendre la consigne</button>
+    <button class="sugg-chip" data-sugg="organiser">M’organiser</button>
+    <button class="sugg-chip" data-sugg="bloque">Je bloque</button>
+    <button class="sugg-chip" data-sugg="photo">Photo de devoir</button>
+  </div>
+
+  <div class="coach-intent">
+    Tu peux m'envoyer une consigne, une photo ou une idée. Je t'aide à comprendre ce qu'il faut faire, puis je te donne une première étape.
+  </div>
+
+  <div class="chat-area" id="chatArea"></div>
+
+  <div id="photoPreviewBox"></div>
+
+  <div class="coach-input">
+    <textarea id="chatInput" placeholder="Écris ou parle à Flux…" rows="1"></textarea>
+    <input type="file" id="photoInput" accept="image/*" capture="environment" hidden>
+    <button class="icon-btn" id="photoBtn" aria-label="Envoyer une photo de consigne" title="Envoyer une photo de consigne">
+      <svg viewBox="0 0 24 24"><path d="M3 8 h4 l2 -3 h6 l2 3 h4 v12 H3 z"/><circle cx="12" cy="13" r="4"/></svg>
+    </button>
+    <button class="icon-btn" id="micBtn" aria-label="Dictée">
+      <svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11 v1 a7 7 0 0 0 14 0 v-1 M12 19 v3 M9 22 h6"/></svg>
+    </button>
+    <button class="icon-btn send" id="sendBtn" aria-label="Envoyer">
+      <svg viewBox="0 0 24 24"><path d="M3 12 L21 4 L17 21 L13 13 z"/><path d="M3 12 L13 13"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ============== SCREEN OUTILS ============== -->
+<section id="screen-tools" class="screen">
+  <div class="tools-head">
+    <h1 class="h-display">Outils</h1>
+    <div class="date" style="font-family:'Caveat',cursive;font-size:20px;color:var(--terracotta);">ta boîte d'atelier</div>
+    <div class="tools-help">Choisis un outil quand tu bloques ou quand tu ne sais pas par quoi commencer.</div>
+  </div>
+
+  <article class="paper tools-entry">
+    <div class="h-card">De quoi tu as besoin maintenant ?</div>
+    <div class="need-grid">
+      <button class="need-btn primary" type="button" data-tool-jump="routine">Je démarre</button>
+      <button class="need-btn" type="button" data-tool-jump="focus">Je me concentre</button>
+      <button class="need-btn" type="button" data-tool-jump="unblock">Je bloque</button>
+      <button class="need-btn" type="button" data-tool-jump="resources">Je cherche une ressource</button>
+    </div>
+  </article>
+
+  <div class="tools-section" id="tools-routine">
+    <div class="tools-section-head"><h2 class="h-section">Méthode : comment je démarre</h2><span class="section-note">repère</span></div>
+    <div class="tools-grid">
+      <article class="paper tool-card primary-tool wide tilt-l" data-tool="pipeline">
+        <div class="tool-icon bg-sage"><svg viewBox="0 0 24 24"><path d="M4 6 h16 M4 12 h16 M4 18 h10"/><circle cx="20" cy="18" r="2.5"/></svg></div>
+        <div class="tool-name">Méthode de démarrage</div>
+        <div class="tool-desc">Comprendre les étapes. La routine à cocher est sur Aujourd'hui.</div>
+      </article>
+    </div>
+  </div>
+
+  <div class="tools-section" id="tools-focus">
+    <div class="tools-section-head"><h2 class="h-section">Focus</h2><span class="section-note">se poser</span></div>
+    <div class="tools-grid">
+      <article class="paper tool-card command wide tilt-r" data-tool="focus">
+        <div class="tool-icon bg-terra"><svg viewBox="0 0 24 24"><path d="M12 3 v4 M12 17 v4 M3 12 h4 M17 12 h4"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <div class="tool-name">Me concentrer</div>
+        <div class="tool-desc">2 minutes pour se poser. 15 minutes pour avancer.</div>
+        <div class="tool-actions">
+          <button class="btn btn-primary" type="button" data-tool="timer-2">Lancer 2 minutes</button>
+          <a class="btn btn-soft" href="https://www.youtube.com/watch?v=1b9kiAWkTR8" target="_blank" rel="noopener">Voir la vidéo</a>
+        </div>
+      </article>
+      <article class="paper tool-card tilt-r" data-tool="timer">
+        <div class="tool-icon bg-terra"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9 v4 l3 2"/><path d="M9 3 h6 M12 3 v3"/></svg></div>
+        <div class="tool-name">Minuteur 15 min</div>
+        <div class="tool-desc">15 minutes pour avancer.</div>
+      </article>
+    </div>
+  </div>
+
+  <div class="tools-section" id="tools-unblock">
+    <div class="tools-section-head"><h2 class="h-section">Déblocage</h2><span class="section-note">consigne</span></div>
+    <div class="tools-grid">
+      <article class="paper tool-card tilt-r" data-tool="qqoqccp">
+        <div class="tool-icon bg-yellow"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9 a3 3 0 0 1 6 0 c0 2 -3 2 -3 4 M12 17 v.5"/></svg></div>
+        <div class="tool-name">Je bloque</div>
+        <div class="tool-desc">On démonte la consigne avec QQOQCCP.</div>
+      </article>
+      <article class="paper tool-card tilt-l" data-tool="coach-qq">
+        <div class="tool-icon bg-blue"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><ellipse cx="12" cy="12" rx="9" ry="2.5" transform="rotate(-15 12 12)"/></svg></div>
+        <div class="tool-name">Demander à Flux</div>
+        <div class="tool-desc">Aide avec la méthode, pas la réponse.</div>
+      </article>
+    </div>
+  </div>
+
+  <div class="tools-section" id="tools-resources">
+    <div class="tools-section-head"><h2 class="h-section">Ressources</h2><span class="section-note">choisir</span></div>
+    <div class="tools-grid">
+      <article class="paper tool-card wide tilt-r" data-tool="resources">
+        <div class="tool-icon bg-violet"><svg viewBox="0 0 24 24"><path d="M3 5 h18 v14 H3 z"/><path d="M3 9 h18 M9 5 v14"/></svg></div>
+        <div class="tool-name">Sites utiles</div>
+        <div class="tool-desc">Pronote, NotebookLM, maths, langues et PSE.</div>
+      </article>
+    </div>
+  </div>
+
+  <div class="tools-section" id="tools-rules">
+    <div class="tools-section-head"><h2 class="h-section">Règles IA</h2><span class="section-note">bien demander</span></div>
+    <div class="tools-grid">
+      <article class="paper tool-card tilt-l" data-tool="rules">
+        <div class="tool-icon bg-blue"><svg viewBox="0 0 24 24"><path d="M5 4 h14 v16 H5 z"/><path d="M9 9 h6 M9 13 h6 M9 17 h4"/></svg></div>
+        <div class="tool-name">Demander à Flux correctement</div>
+        <div class="tool-desc">Comprendre, méthode, première étape.</div>
+      </article>
+      <article class="paper tool-card tilt-l" data-tool="decroche">
+        <div class="tool-icon bg-pink"><svg viewBox="0 0 24 24"><path d="M12 3 v6 M9 6 l3 3 l3 -3"/><path d="M4 12 a8 8 0 0 0 16 0"/><path d="M4 18 h16"/></svg></div>
+        <div class="tool-name">Je décroche</div>
+        <div class="tool-desc">Stop. On réduit.</div>
+      </article>
+      <article class="paper tool-card full tilt-r" data-tool="settings">
+        <div class="tool-icon bg-turquoise"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12 a7 7 0 0 0 -.1 -1.2 l2 -1.5 l-2 -3.5 l-2.4 .9 a7 7 0 0 0 -2 -1.2 l-.4 -2.5 h-4 l-.4 2.5 a7 7 0 0 0 -2 1.2 l-2.4 -.9 l-2 3.5 l2 1.5 a7 7 0 0 0 0 2.4 l-2 1.5 l2 3.5 l2.4 -.9 a7 7 0 0 0 2 1.2 l.4 2.5 h4 l.4 -2.5 a7 7 0 0 0 2 -1.2 l2.4 .9 l2 -3.5 l-2 -1.5 a7 7 0 0 0 .1 -1.2 z"/></svg></div>
+        <div class="tool-text"><div class="tool-name">Réglages</div><div class="tool-desc">Clés API coach, voix, données.</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- bottom nav -->
+<nav class="bottom-nav">
+  <div class="bottom-nav-inner">
+    <button class="nav-btn active" data-screen="today">
+      <svg viewBox="0 0 24 24"><path d="M4 11 l8 -7 l8 7 v9 a1 1 0 0 1 -1 1 h-4 v-6 h-6 v6 H5 a1 1 0 0 1 -1 -1 z"/></svg>
+      Aujourd'hui
+    </button>
+    <button class="nav-btn" data-screen="planning">
+      <svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 9.5 h17 M8 3 v4 M16 3 v4"/></svg>
+      Planning
+    </button>
+    <button class="nav-btn" data-screen="coach">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/><ellipse cx="12" cy="12" rx="9" ry="2.5" transform="rotate(-15 12 12)"/></svg>
+      Coach
+    </button>
+    <button class="nav-btn" data-screen="tools">
+      <svg viewBox="0 0 24 24"><path d="M4 8 h16 v12 H4 z M9 8 V5 h6 v3"/></svg>
+      Outils
+    </button>
+  </div>
+</nav>
+
+</div>
+
+<!-- modal générique -->
+<div class="modal-bg" id="modalBg">
+  <div class="modal" id="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-head">
+      <h2 class="h-section" id="modalTitle">Titre</h2>
+      <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+    </div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============================================================
+   FLUX V2 — CARNET D'ATELIER
+   ============================================================ */
+
+const STORAGE_KEY = 'flux.v2.state';
+const DAY_NAMES = ['dimanche','lundi','mardi','mercredi','jeudi','vendredi','samedi'];
+const MONTH_NAMES = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+
+const DEFAULT_STATE = {
+  xp: 30,
+  level: 1,
+  streak: 1,
+  lastActiveDate: null,
+  pipeline: { date: null, steps: [false,false,false,false,false] },
+  progress: { regularite: 12, concentration: 30, autonomie: 20, curiosite: 40 },
+  reminders: [
+    { text: "Apporter sa calculatrice", done: false },
+    { text: "Vérifier Pronote ce soir", done: true }
+  ],
+  badges: ['premier-pas'],
+  coachHistory: [],
+  apiKeys: { gemini: '', elevenlabs: '' },
+  qqoqccp: { qui:'', quoi:'', ou:'', quand:'', comment:'', combien:'', pourquoi:'' },
+  guidance: {
+    lastNotification: null,
+    lastMoment: null,
+    eveningActionDoneDate: null,
+    postItReadDate: null,
+    eveningReminderShownDate: null,
+    pfmpCelebrationSent: false,
+    remindersEnabled: false
+  }
+};
+
+let state = loadState();
+
+function loadState(){
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return structuredClone(DEFAULT_STATE);
+    const parsed = JSON.parse(raw);
+    const base = structuredClone(DEFAULT_STATE);
+    return {
+      ...base,
+      ...parsed,
+      pipeline: { ...base.pipeline, ...(parsed.pipeline || {}) },
+      progress: { ...base.progress, ...(parsed.progress || {}) },
+      apiKeys: { ...base.apiKeys, ...(parsed.apiKeys || {}) },
+      qqoqccp: { ...base.qqoqccp, ...(parsed.qqoqccp || {}) },
+      guidance: { ...base.guidance, ...(parsed.guidance || {}) }
+    };
+  } catch(e){
+    return structuredClone(DEFAULT_STATE);
+  }
+}
+function saveState(){
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e){}
+}
+function todayISO(){
+  const d = new Date();
+  return d.toISOString().slice(0,10);
+}
+function formatDateLong(d){
+  return `${DAY_NAMES[d.getDay()]} ${d.getDate()} ${MONTH_NAMES[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+const screens = document.querySelectorAll('.screen');
+const navBtns = document.querySelectorAll('.nav-btn');
+function showScreen(name){
+  screens.forEach(s => s.classList.toggle('active', s.id === 'screen-'+name));
+  navBtns.forEach(b => b.classList.toggle('active', b.dataset.screen === name));
+  window.scrollTo({top:0,behavior:'instant'});
+}
+navBtns.forEach(b => b.addEventListener('click', () => showScreen(b.dataset.screen)));
+
+/* ============================================================
+   AUJOURD'HUI
+   ============================================================ */
+function getTodayLessonContext(now=new Date()){
+  const day = now.getDay();
+  const todayLessons = (EDT[day] || []).slice().sort((a,b) => timeToMinutes(a.start) - timeToMinutes(b.start));
+  const currentMinutes = now.getHours() * 60 + now.getMinutes();
+  const current = todayLessons.find(l => timeToMinutes(l.start) <= currentMinutes && timeToMinutes(l.end) > currentMinutes);
+  const next = todayLessons.find(l => timeToMinutes(l.start) >= currentMinutes);
+  return { todayLessons, current, next };
+}
+
+function getGuidanceContext(date = new Date()){
+  const day = date.getDay();
+  const minutes = date.getHours() * 60 + date.getMinutes();
+  const todayCourses = (EDT[day] || []).slice().sort((a,b) => timeToMinutes(a.start) - timeToMinutes(b.start));
+  const firstCourse = todayCourses[0] || null;
+  const pastCourses = todayCourses.filter(c => timeToMinutes(c.end) <= minutes);
+  const remainingCourses = todayCourses.filter(c => timeToMinutes(c.end) > minutes);
+  const nextCourse = todayCourses.find(c => timeToMinutes(c.end) > minutes) || null;
+  const pfmp = getPfmpProgress(date);
+  const isWeekend = day === 0 || day === 6;
+  const lastCourse = todayCourses[todayCourses.length - 1] || null;
+  const afternoonCourse = todayCourses.find(c => timeToMinutes(c.start) >= 13 * 60) || null;
+  const morningCourses = pastCourses.filter(c => timeToMinutes(c.start) < 12 * 60);
+  const finishedDay = lastCourse ? minutes >= timeToMinutes(lastCourse.end) : false;
+  let moment = 'afternoon';
+
+  if (isWeekend) moment = 'weekend';
+  else if (minutes >= 22 * 60 || minutes < 5 * 60) moment = 'night';
+  else if (!todayCourses.length) moment = minutes >= 17 * 60 ? 'evening' : 'afternoon';
+  else if (firstCourse && minutes < timeToMinutes(firstCourse.start)) moment = 'morning';
+  else if (minutes >= 11 * 60 + 30 && minutes < 14 * 60 && afternoonCourse) moment = 'midday';
+  else if (finishedDay || minutes >= 17 * 60) moment = 'evening';
+  else if (minutes < 12 * 60) moment = 'morning';
+
+  const courseNames = todayCourses.map(c => c.name);
+  const uniqueCourseNames = [...new Set(courseNames)];
+  const revisionTargets = (pastCourses.length ? pastCourses : todayCourses)
+    .slice(0,3)
+    .map(c => c.name);
+  if (!revisionTargets.length) revisionTargets.push('un cours court', 'Pronote', 'le classeur');
+
+  let mainMessage = '';
+  let notificationTitle = 'Flux';
+  let notificationBody = '';
+  let postItTitle = '';
+  let postItItems = [];
+  let oneAction = { label:'Regarde ta journée', detail:'Premier cours, affaires, point de repère.', targetScreen:'planning' };
+  let coachOpening = '';
+  let quickQuestions = [];
+
+  if (moment === 'weekend'){
+    mainMessage = 'Week-end. 15 minutes suffisent : un cours dans NotebookLM, un mini-quiz ou juste le rangement du classeur.';
+    notificationTitle = 'Petit entretien Flux';
+    notificationBody = '15 minutes suffisent : un cours, un quiz ou un classeur.';
+    postItTitle = 'Week-end léger';
+    postItItems = ['Choisir un seul cours', 'NotebookLM ou LearningApps', 'Ranger un classeur'];
+    oneAction = { label:'Entretien léger', detail:'15 minutes, pas plus.', targetScreen:'tools' };
+    coachOpening = "Week-end. On garde ça léger : une seule petite action suffit pour rester dans le rythme.";
+    quickQuestions = ['Aide-moi à choisir quoi réviser', 'Je veux faire 15 minutes', 'Je range quoi en premier ?'];
+  } else if (moment === 'night'){
+    mainMessage = "Il est tard. Pas de révision maintenant. Prépare juste tes affaires si ce n’est pas fait, puis repos.";
+    notificationTitle = 'Flux';
+    notificationBody = 'Il est tard : affaires prêtes, puis repos.';
+    postItTitle = 'Avant repos';
+    postItItems = ['Préparer les affaires', 'Mettre le réveil', 'Repos'];
+    oneAction = { label:'Prépare demain', detail:'Juste les affaires, pas de révision.', targetScreen:'planning' };
+    coachOpening = "Il est tard. On ne lance pas un gros travail maintenant : si besoin, on prépare juste demain.";
+    quickQuestions = ['Quoi préparer pour demain ?', 'Je suis inquiet pour demain', 'Aide-moi à fermer la journée'];
+  } else if (moment === 'morning'){
+    const first = firstCourse || nextCourse;
+    const structure = uniqueCourseNames.slice(0,3).join(', ');
+    mainMessage = first
+      ? `Bonjour Pierre. Aujourd’hui tu commences par ${first.name} à ${first.start}. Ensuite : ${structure}. Avant de partir, vérifie ton classeur et garde une question en tête.`
+      : 'Bonjour Pierre. Aujourd’hui, commence par vérifier Pronote et préparer une petite action de travail.';
+    notificationTitle = 'Repère du matin';
+    notificationBody = first ? `Premier cours : ${first.name} à ${first.start}. Vérifie ton classeur.` : 'Vérifie Pronote et prépare une petite action.';
+    postItTitle = 'Avant de partir';
+    postItItems = [first ? `Classeur ${first.name}` : 'Classeur du jour', 'Vérifier Pronote', 'Une question à garder'];
+    oneAction = { label:'Regarde ta journée', detail:'Premier cours, affaires, point de repère.', targetScreen:'planning' };
+    coachOpening = first
+      ? `Bonjour. Ton premier repère, c’est ${first.name} à ${first.start}. Je peux t’aider à préparer sans faire le travail à ta place.`
+      : 'Bonjour. On commence simple : Pronote, affaires, puis une seule action.';
+    quickQuestions = ["C’est quoi mon premier cours ?", "Qu’est-ce que je dois préparer ?", "J’ai peur d’oublier des affaires"];
+  } else if (moment === 'midday'){
+    const morning = morningCourses.map(c => c.name).filter((v,i,a) => a.indexOf(v) === i).join(', ') || 'ta matinée';
+    const next = nextCourse || afternoonCourse;
+    mainMessage = next
+      ? `Pause presque finie. Ce matin tu as eu ${morning}. Tu te souviens d’une consigne importante ? Cet après-midi, tu reprends avec ${next.name}.`
+      : `Pause presque finie. Repense à une consigne de ce matin, puis vérifie ce qu’il reste à faire.`;
+    notificationTitle = 'Avant de reprendre';
+    notificationBody = next ? `Prochain cours : ${next.name}. Prépare juste le bon classeur.` : 'Fais un point rapide sur la matinée.';
+    postItTitle = 'Avant de reprendre';
+    postItItems = ['Ce que j’ai fait ce matin', next ? `Prochain cours : ${next.name}` : 'Ce qu’il reste', 'Une question si je bloque'];
+    oneAction = { label:'Fais le point', detail:'Une question sur la matinée, puis reprise.', targetScreen:'planning' };
+    coachOpening = "On fait le pont avec la suite. Dis-moi une chose vue ce matin, puis on prépare la reprise.";
+    quickQuestions = ['Aide-moi à faire le point sur ce matin', 'Je ne sais plus ce qu’on a fait', "Qu’est-ce que je dois préparer pour cet après-midi ?"];
+  } else if (moment === 'evening'){
+    mainMessage = "Fin de journée. On ne fait pas tout. Ouvre Pronote, puis choisis un seul cours à relire 10 minutes. Si tu bloques, envoie une photo à Flux.";
+    notificationTitle = 'Lancement du soir';
+    notificationBody = 'Ouvre Pronote, puis une seule révision de 10 minutes.';
+    postItTitle = 'Pour lancer le travail';
+    postItItems = ['Ouvrir Pronote', 'Ranger un classeur', 'Relire 10 minutes'];
+    oneAction = { label:'Lance 10 minutes', detail:'Pronote, classeur, une seule révision.', targetScreen:'tools' };
+    coachOpening = "Fin de journée. Je peux t’aider à démarrer une révision ou comprendre une consigne, sans faire le devoir à ta place.";
+    quickQuestions = ['Aide-moi à commencer', 'Je t’envoie une photo du devoir', "Je n’ai pas envie de réviser", 'Fais-moi une méthode sans donner la réponse'];
+  } else {
+    const next = nextCourse;
+    mainMessage = next
+      ? `Tu es dans ta journée. Le prochain repère est ${next.name} à ${next.start}. Prépare juste ce qu’il faut pour commencer.`
+      : 'La journée avance. Garde une seule action claire : vérifier Pronote ou relire un cours court.';
+    notificationTitle = 'Repère Flux';
+    notificationBody = next ? `Prochain repère : ${next.name} à ${next.start}.` : 'Une seule action courte suffit.';
+    postItTitle = 'Repère maintenant';
+    postItItems = [next ? `Prochain cours : ${next.name}` : 'Vérifier Pronote', 'Une action courte', 'Demander si je bloque'];
+    oneAction = { label:'Garde le fil', detail:'Un repère, puis une action courte.', targetScreen:next ? 'planning' : 'tools' };
+    coachOpening = "On garde le fil. Dis-moi ce qui bloque, et je te donne seulement la première étape.";
+    quickQuestions = ['Aide-moi à garder le fil', 'Quelle est ma prochaine étape ?', 'Je bloque sur une consigne'];
+  }
+
+  if (pfmp.daysRemaining < 21 && pfmp.status !== 'after'){
+    const pfmpLine = pfmp.daysRemaining <= 7
+      ? `Plus que ${pfmp.daysRemaining} jours : vérifie ton matériel ou tes infos de départ.`
+      : `Plus que ${pfmp.daysRemaining} jours avant la PFMP : repère une chose à préparer.`;
+    mainMessage = `${pfmpLine} ${mainMessage}`;
+    oneAction = pfmp.daysRemaining <= 7
+      ? { label:'Prépare lundi', detail:'Affaires, documents, horaires : une vérification.', targetScreen:'planning' }
+      : { label:'Prépare la PFMP', detail:'Une fiche ENS PRO ou une question à vérifier.', targetScreen:'planning' };
+    postItItems = ['Relire une fiche ENS PRO', 'Vérifier une question PFMP', postItItems[0] || 'Vérifier Pronote'].slice(0,3);
+    notificationBody = notificationBody + ' PFMP bientôt : un petit pas suffit.';
+  }
+
+  return {
+    moment,
+    todayCourses,
+    nextCourse,
+    pastCourses,
+    remainingCourses,
+    revisionTargets,
+    pfmpDaysLeft: pfmp.daysRemaining,
+    mainMessage,
+    notificationTitle,
+    notificationBody,
+    postItTitle,
+    postItItems: postItItems.slice(0,3),
+    oneAction,
+    coachOpening,
+    quickQuestions: quickQuestions.slice(0,4)
+  };
+}
+
+function getRoutineStepsForMoment(moment){
+  const routines = {
+    morning: {
+      note:'Préparer la journée sans tout charger.',
+      steps:[
+        { id:'first-course', text:'Regarder le premier cours', badge:'started-alone' },
+        { id:'bags', text:'Vérifier les affaires', badge:'started-alone' },
+        { id:'pronote', text:'Ouvrir Pronote si besoin', badge:'checked-pronote' }
+      ]
+    },
+    midday: {
+      note:'Faire le pont entre matinée et reprise.',
+      steps:[
+        { id:'morning-point', text:'Dire une chose faite ce matin', badge:'started-alone' },
+        { id:'next-course', text:'Regarder le prochain cours', badge:'started-alone' },
+        { id:'question', text:'Noter une question si je bloque', badge:'asked-method' }
+      ]
+    },
+    evening: {
+      note:'Lancer le travail du soir, pas tout faire.',
+      steps:[
+        { id:'pronote', text:'Ouvrir Pronote', badge:'checked-pronote' },
+        { id:'binder', text:'Sortir un seul classeur', badge:'started-alone' },
+        { id:'review', text:'Relire 10 minutes', badge:'held-15' },
+        { id:'blocked', text:'Si je bloque : Flux ou NotebookLM', badge:'asked-method' }
+      ]
+    },
+    weekend: {
+      note:'Entretien léger, sans pression.',
+      steps:[
+        { id:'choose', text:'Choisir un seul cours', badge:'started-alone' },
+        { id:'notebooklm', text:'NotebookLM ou mini-quiz', badge:'used-notebooklm' },
+        { id:'folder', text:'Ranger un classeur', badge:'started-alone' }
+      ]
+    },
+    night: {
+      note:'Il est tard : on prépare seulement demain.',
+      steps:[
+        { id:'bags', text:'Préparer les affaires', badge:'started-alone' },
+        { id:'pronote', text:'Vérifier Pronote si besoin', badge:'checked-pronote' },
+        { id:'rest', text:'Repos', badge:'started-alone' }
+      ]
+    },
+    afternoon: {
+      note:'Garder le fil avec une action courte.',
+      steps:[
+        { id:'repere', text:'Regarder le prochain repère', badge:'started-alone' },
+        { id:'one-task', text:'Choisir une seule tâche', badge:'started-alone' },
+        { id:'help', text:'Demander une méthode si je bloque', badge:'asked-method' }
+      ]
+    }
+  };
+  return routines[moment] || routines.afternoon;
+}
+
+function ensureBadge(id){
+  if (!state.badges) state.badges = [];
+  if (!state.badges.includes(id)) state.badges.push(id);
+}
+
+function getAutonomyBadges(){
+  const doneCount = (state.pipeline?.steps || []).filter(Boolean).length;
+  const coachQuestions = state.coachHistory.filter(m => m.role === 'user').length;
+  const badges = [
+    { id:'started-alone', name:"J'ai commencé seul", hint:"Tu as lancé une action sans attendre que tout soit parfait." },
+    { id:'checked-pronote', name:"J'ai vérifié Pronote", hint:"Tu as utilisé la bonne source pour savoir quoi faire." },
+    { id:'asked-method', name:"J'ai demandé une méthode", hint:"Tu as demandé comment faire, pas la réponse." },
+    { id:'photo-understand', name:"J'ai envoyé une photo pour comprendre", hint:"Tu utilises la photo pour lire la consigne." },
+    { id:'held-15', name:"J'ai tenu 15 minutes", hint:"Tu as gardé un temps court de concentration." },
+    { id:'restarted', name:"J'ai repris après décrochage", hint:"Tu as réduit puis tu es revenu." },
+    { id:'used-notebooklm', name:"J'ai utilisé NotebookLM sans copier", hint:"Tu t'en sers pour comprendre le cours." },
+    { id:'prepared-pfmp', name:"J'ai préparé ma PFMP", hint:"Tu as fait un petit pas vers le stage." }
+  ];
+  if (doneCount > 0) ensureBadge('started-alone');
+  if (doneCount >= 3) ensureBadge('checked-pronote');
+  if (doneCount >= 4) ensureBadge('held-15');
+  if (coachQuestions > 0) ensureBadge('asked-method');
+  if (coachQuestions >= 5) ensureBadge('restarted');
+  if (getPfmpProgressData().daysRemaining <= 21) ensureBadge('prepared-pfmp');
+  return badges;
+}
+
+function getAutonomyTraces(){
+  getAutonomyBadges();
+  const traceMap = {
+    'checked-pronote':'tu as vérifié Pronote seul.',
+    'asked-method':'tu as demandé une méthode au lieu d’une réponse.',
+    'held-15':'tu as tenu un temps court de travail.',
+    'restarted':'tu as repris après un décrochage.',
+    'used-notebooklm':'tu as utilisé une ressource pour comprendre.',
+    'prepared-pfmp':'tu as préparé un repère PFMP.',
+    'started-alone':'tu as commencé par une action simple.'
+  };
+  return (state.badges || [])
+    .filter(id => traceMap[id])
+    .slice(-3)
+    .reverse()
+    .map(id => traceMap[id]);
+}
+
+function renderRoutineCard(guidance){
+  const routine = getRoutineStepsForMoment(guidance.moment);
+  const list = document.getElementById('routineList');
+  const note = document.getElementById('routineNote');
+  const status = document.getElementById('routineStatus');
+  if (!list || !note || !status) return;
+  note.textContent = routine.note;
+  const steps = routine.steps;
+  const doneCount = steps.filter((_, i) => state.pipeline.steps[i]).length;
+  status.textContent = `${doneCount}/${steps.length}`;
+  list.innerHTML = steps.map((s, i) => `
+    <li class="routine-step ${state.pipeline.steps[i] ? 'done' : ''}" data-i="${i}" data-badge="${s.badge}">
+      <span class="checkbox"></span>
+      <span class="routine-step-text">${escapeHTML(s.text)}</span>
+    </li>
+  `).join('');
+  list.querySelectorAll('.routine-step').forEach(li => {
+    li.addEventListener('click', () => {
+      const i = parseInt(li.dataset.i, 10);
+      const wasDone = state.pipeline.steps[i];
+      state.pipeline.steps[i] = !wasDone;
+      if (!wasDone){
+        state.xp += 4;
+        state.progress.autonomie = Math.min(100, (state.progress.autonomie || 0) + 3);
+        state.progress.regularite = Math.min(100, (state.progress.regularite || 0) + 2);
+        ensureBadge(li.dataset.badge);
+      }
+      saveState();
+      toast(!wasDone ? 'Jardin arrosé' : 'Étape remise à faire');
+      renderRoutineCard(guidance);
+      renderPlant();
+      renderProgress();
+      renderWeekSummary(guidance);
+    });
+  });
+}
+
+function renderWeekSummary(guidance){
+  const card = document.getElementById('weekSummaryCard');
+  const list = document.getElementById('weekSummaryList');
+  if (!card || !list) return;
+  const now = new Date();
+  const show = now.getDay() === 5 && now.getHours() >= 17 || now.getDay() === 0 || now.getDay() === 6 || guidance.moment === 'weekend';
+  card.classList.toggle('show', show);
+  if (!show) return;
+  const done = (state.pipeline.steps || []).filter(Boolean).length;
+  const coachHelps = state.coachHistory.filter(m => m.role === 'user').length;
+  const traces = getAutonomyTraces();
+  list.innerHTML = [
+    `${done} routine${done > 1 ? 's' : ''} lancée${done > 1 ? 's' : ''} aujourd'hui.`,
+    state.progress.concentration >= 35 ? 'Des temps de concentration ont été faits.' : 'Une révision courte suffit pour garder le fil.',
+    coachHelps ? `${coachHelps} aide${coachHelps > 1 ? 's' : ''} demandée${coachHelps > 1 ? 's' : ''} au coach.` : 'Tu peux demander une méthode si une consigne bloque.',
+    traces[0] ? `Trace : ${traces[0]}` : 'Trace : premier pas à construire.'
+  ].map(t => `<div>${escapeHTML(t)}</div>`).join('');
+}
+
+function renderToday(){
+  const now = new Date();
+  document.getElementById('todayDate').textContent = formatDateLong(now);
+
+  // streak / dailycheck
+  if (state.lastActiveDate !== todayISO()){
+    const yest = new Date(); yest.setDate(yest.getDate()-1);
+    const yISO = yest.toISOString().slice(0,10);
+    if (state.lastActiveDate === yISO) state.streak += 1;
+    else if (state.lastActiveDate !== null) state.streak = 1;
+    state.lastActiveDate = todayISO();
+    state.pipeline = { date: todayISO(), steps:[false,false,false,false,false] };
+    saveState();
+  }
+  if (state.pipeline.date !== todayISO()){
+    state.pipeline = { date: todayISO(), steps:[false,false,false,false,false] };
+    saveState();
+  }
+  if (!Array.isArray(state.pipeline.steps) || state.pipeline.steps.length < 5){
+    state.pipeline.steps = [false,false,false,false,false];
+    saveState();
+  }
+
+  // streak badge
+  document.getElementById('streakBadge').textContent =
+    state.streak <= 1 ? 'jour 1' : `${state.streak} jours`;
+
+  const guidance = getGuidanceContext(now);
+  if (state.guidance.lastMoment !== guidance.moment){
+    state.guidance.lastMoment = guidance.moment;
+    saveState();
+  }
+  const startBtn = document.getElementById('startTodayBtn');
+  const routePill = document.getElementById('routePill');
+
+  document.getElementById('routeTitle').textContent = guidance.oneAction.label;
+  document.getElementById('routeSub').textContent = guidance.oneAction.detail;
+  document.getElementById('objectifText').textContent = guidance.mainMessage;
+  if (routePill) routePill.innerHTML = guidance.moment === 'evening' ? 'Soir' : guidance.moment === 'weekend' ? 'Week-end' : 'Maintenant';
+  if (startBtn) startBtn.dataset.target = guidance.oneAction.targetScreen === 'home' ? 'today' : guidance.oneAction.targetScreen;
+
+  // post-it intelligent
+  const postitTitle = document.querySelector('#screen-today .postit-title');
+  if (postitTitle) postitTitle.textContent = guidance.postItTitle;
+  const rl = document.getElementById('remindersList');
+  rl.innerHTML = '';
+  guidance.postItItems.forEach((text,i) => {
+    const li = document.createElement('li');
+    const done = state.guidance.postItReadDate === todayISO() && i === 0;
+    li.className = done ? 'done' : '';
+    li.innerHTML = `<span class="checkbox"></span><span>${escapeHTML(text)}</span>`;
+    li.addEventListener('click', () => {
+      state.guidance.postItReadDate = todayISO();
+      saveState(); renderToday();
+    });
+    rl.appendChild(li);
+  });
+
+  renderRoutineCard(guidance);
+  renderWeekSummary(guidance);
+
+  // progression
+  renderProgress();
+  renderPlant();
+}
+
+function renderProgress(){
+  const grid = document.getElementById('progressGrid');
+  const autonomie = Math.min(100, state.progress.autonomie || 0);
+  const doneToday = (state.pipeline.steps || []).filter(Boolean).length;
+  const weekLabel = doneToday >= 3 ? 'régulière' : doneToday > 0 ? 'lancée' : 'à lancer';
+  const metrics = [
+    { label:'Autonomie', sub:`Niveau ${Math.max(1, Math.ceil(autonomie/20))}`, ring:'progress_ring_sage.png', icon:'progress_icon_leaf.png' },
+    { label:'Semaine', sub:weekLabel, ring:'progress_ring_blue.png', icon:'progress_icon_target.png' },
+    { label:'Rythme', sub:state.streak <= 1 ? 'jour 1' : `${state.streak} jours`, ring:'progress_ring_terracotta.png', icon:'progress_icon_star.png' }
+  ];
+  grid.innerHTML = metrics.map(m => {
+    return `
+      <div class="metric">
+        <div class="metric-ring">
+          <img class="progress-ring-img" src="assets/illustrations/${m.ring}" alt="" aria-hidden="true" onerror="this.style.display='none'">
+          <img class="progress-icon-img" src="assets/illustrations/${m.icon}" alt="" aria-hidden="true" onerror="this.style.display='none'">
+        </div>
+        <div class="metric-label">${m.label}</div>
+        <div class="metric-value">${m.sub}</div>
+      </div>`;
+  }).join('');
+}
+
+function iconSVG(name, color){
+  const c = color || '#2F2B25';
+  if (name === 'leaf') return `<svg viewBox="0 0 22 22" fill="${c}"><path d="M11 2 Q5 6 5 12 Q5 17 11 20 Q17 17 17 12 Q17 6 11 2 Z M11 6 Q9 9 9 12 Q9 15 11 18 Q13 15 13 12 Q13 9 11 6 Z"/></svg>`;
+  if (name === 'target') return `<svg viewBox="0 0 22 22" fill="none" stroke="${c}" stroke-width="2"><circle cx="11" cy="11" r="8"/><circle cx="11" cy="11" r="4"/><circle cx="11" cy="11" r="1.5" fill="${c}"/></svg>`;
+  if (name === 'star') return `<svg viewBox="0 0 22 22" fill="${c}"><path d="M11 2 l2.5 6 l6.5 .5 l-5 4.5 l1.5 6.5 l-5.5 -3.5 l-5.5 3.5 l1.5 -6.5 l-5 -4.5 l6.5 -.5 z"/></svg>`;
+  if (name === 'globe') return `<svg viewBox="0 0 22 22" fill="none" stroke="${c}" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="M3 11 h16 M11 3 a12 12 0 0 1 0 16 a12 12 0 0 1 0 -16"/></svg>`;
+  return '';
+}
+
+function renderPlant(){
+  const autonomie = Math.min(100, state.progress.autonomie || 0);
+  const stage = Math.min(5, Math.floor(autonomie / 20));
+  const pct = autonomie;
+  const doneToday = (state.pipeline.steps || []).some(Boolean);
+  const labels = [
+    { name:'Autonomie niveau 1', hint:"Tu démarres : une action courte, puis une pause." },
+    { name:'Autonomie niveau 2', hint:"Tu sais commencer avec un repère simple." },
+    { name:'Autonomie niveau 3', hint:"Tu avances mieux quand l'étape est claire." },
+    { name:'Autonomie niveau 4', hint:"Tu prends de bons réflexes de travail." },
+    { name:'Autonomie niveau 5', hint:"Tu sais demander de l'aide au bon moment." },
+    { name:'Autonomie solide', hint:"Tu construis une vraie méthode personnelle." }
+  ];
+  document.getElementById('plantStage').textContent = labels[stage].name;
+  document.getElementById('plantHint').textContent = labels[stage].hint;
+  document.getElementById('plantBar').style.width = pct + '%';
+  const status = document.getElementById('plantStatus');
+  if (status) status.textContent = doneToday ? "arrosée aujourd'hui" : 'pas encore arrosée';
+  const traces = document.getElementById('plantTraces');
+  if (traces){
+    const items = getAutonomyTraces();
+    traces.innerHTML = items.length
+      ? items.map(t => `<span>Trace récente : ${escapeHTML(t)}</span>`).join('')
+      : '<span>Trace récente : une routine à lancer aujourd’hui.</span>';
+  }
+  const img = document.getElementById('plantImg');
+  if (img) img.src = `assets/illustrations/plant_stage_0${stage+1}_clean.png`;
+}
+
+function escapeHTML(s){
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+document.getElementById('cardRoute').addEventListener('click', () => {
+  showScreen('coach');
+  setTimeout(() => sendCoachAuto(`Aide-moi à commencer : ${document.getElementById('routeTitle').textContent} — ${document.getElementById('routeSub').textContent}.`), 200);
+});
+
+document.getElementById('startTodayBtn').addEventListener('click', (e) => {
+  e.stopPropagation();
+  state.xp += 5;
+  state.progress.autonomie = Math.min(100, (state.progress.autonomie || 0) + 2);
+  ensureBadge('started-alone');
+  const guidance = getGuidanceContext();
+  if (guidance.moment === 'evening') state.guidance.eveningActionDoneDate = todayISO();
+  saveState();
+  toast('Premier pas fait');
+  renderRoutineCard(guidance);
+  renderPlant();
+  renderProgress();
+  const target = document.getElementById('startTodayBtn').dataset.target || 'tools';
+  if (target === 'planning'){
+    showScreen('planning');
+    renderPlanning();
+    return;
+  }
+  if (target === 'coach'){
+    showScreen('coach');
+    setTimeout(() => sendCoachAuto(`Aide-moi à commencer : ${document.getElementById('routeTitle').textContent}.`), 200);
+    return;
+  }
+  showScreen('tools');
+  setTimeout(() => openTool('timer'), 250);
+});
+
+document.getElementById('blockTodayBtn')?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  showScreen('coach');
+  setTimeout(() => sendCoachAuto(`Je bloque sur : ${document.getElementById('routeTitle').textContent}. Aide-moi à trouver la première étape.`), 200);
+});
+
+document.getElementById('openAutonomyBtn')?.addEventListener('click', () => openBadges());
+
+document.querySelector('#screen-today .today-help-card [data-screen="coach"]')?.addEventListener('click', (e) => {
+  e.stopPropagation();
+  showScreen('coach');
+});
+
+/* ============================================================
+   PLANNING
+   ============================================================ */
+const CALENDRIER = {
+  vacances: [
+    { label:'Toussaint', start:'2025-10-18', end:'2025-11-02' },
+    { label:'Noel', start:'2025-12-20', end:'2026-01-04' },
+    { label:'Hiver', start:'2026-02-21', end:'2026-03-08' },
+    { label:'Printemps', start:'2026-04-18', end:'2026-05-03' }
+  ],
+  preparation_pfmp: { debut:'2026-05-04' },
+  pfmp_cible: { debut:'2026-06-08', fin:'2026-07-05' },
+  pfmp: [
+    { label:'PFMP CAP AAGA1', start:'2025-12-01', end:'2025-12-20', type:'entreprise' },
+    { label:'PFMP CAP AAGA1', start:'2026-03-16', end:'2026-04-04', type:'entreprise' },
+    { label:'Parcours Y / PFMP CAP AAGA1', start:'2026-06-08', end:'2026-07-05', type:'entreprise' }
+  ]
+};
+
+const REFERENTIEL_AAGA = {
+  diplomes:['UP1 - Services et entretien dans l environnement collectif', 'UP2 - Promotion de l autonomie dans l espace prive'],
+  axes:['posture professionnelle', 'securite et hygiene', 'travail en equipe', 'service des repas', 'entretien des espaces collectifs', 'entretien du linge', 'autonomie de la personne', 'relation bienveillante', 'entretien et personnalisation de l espace prive']
+};
+
+const EDT = {
+  1: [
+    { day:1, start:'09h', end:'10h', name:'Mathematiques', teacher:'MARIGNAC M.', room:'109-SCIENCES', assistants:['DETRIEUX V.', 'MIREMONT L.'], cls:'maths', type:'maths' },
+    { day:1, start:'10h', end:'12h', name:'PSE', teacher:'BOUZERMA S.', room:'003-APPART PEDA / 107-SCIENCES', assistants:[], cls:'pse', type:'pse' },
+    { day:1, start:'14h', end:'15h', name:'Francais', teacher:'NOUHAUD M.', room:'118', assistants:['DE LA SAYETTE A.'], cls:'francais', type:'francais' },
+    { day:1, start:'16h', end:'17h', name:'Espagnol', teacher:'BOURGEOIS L.', room:'114-LV', assistants:['DE LA SAYETTE A.', 'MIREMONT L.'], cls:'espagnol', type:'langue' }
+  ],
+  2: [
+    { day:2, start:'08h', end:'09h', name:'Realisation projet', teacher:'BAROUSSE A., NOUHAUD M.', room:'120', assistants:[], cls:'real', type:'projet' },
+    { day:2, start:'09h', end:'10h', name:'AP Math', teacher:'MARIGNAC M.', room:'109-SCIENCES', assistants:['MIREMONT L.'], cls:'maths', type:'ap' },
+    { day:2, start:'11h', end:'12h', name:'Co-inter Math', teacher:'BAROUSSE A., MARIGNAC M.', room:'109-SCIENCES', assistants:[], cls:'coint', type:'co-intervention' },
+    { day:2, start:'14h', end:'15h', name:'ENS PRO', teacher:'BAROUSSE A.', room:'003-APPART PEDA', assistants:['MIREMONT L.'], cls:'enspro', type:'pro' },
+    { day:2, start:'15h', end:'16h', name:'ENS PRO', teacher:'BAROUSSE A.', room:'003-APPART PEDA', assistants:[], cls:'enspro', type:'pro' },
+    { day:2, start:'16h', end:'17h', name:'Espagnol', teacher:'BOURGEOIS L.', room:'114-LV', assistants:['MIREMONT L.', 'NUNES L.'], cls:'espagnol', type:'langue' }
+  ],
+  3: [
+    { day:3, start:'09h', end:'10h', name:'ENS PRO Q2', teacher:'WOLFRUM I.', room:'105i-Flexible', assistants:[], cls:'enspro', type:'pro' },
+    { day:3, start:'10h', end:'11h', name:'ENS PRO Q1/Q2', teacher:'WOLFRUM I.', room:'105i-Flexible', assistants:['MIREMONT L.'], cls:'enspro', type:'pro' },
+    { day:3, start:'11h', end:'12h', name:'EPS', teacher:'DIARD H.', room:'GYMN1', assistants:[], cls:'eps', type:'eps' }
+  ],
+  4: [
+    { day:4, start:'08h', end:'09h', name:'ENS PRO', teacher:'BAROUSSE A.', room:'003-APPART PEDA', assistants:[], cls:'enspro', type:'pro' },
+    { day:4, start:'09h', end:'10h', name:'ENS PRO', teacher:'BAROUSSE A.', room:'003-APPART PEDA', assistants:['MIREMONT L.'], cls:'enspro', type:'pro' },
+    { day:4, start:'11h', end:'12h', name:'ENS PRO', teacher:'BAROUSSE A.', room:'003-APPART PEDA', assistants:[], cls:'enspro', type:'pro' },
+    { day:4, start:'13h', end:'14h', name:'ENS PRO', teacher:'BOUZERMA S.', room:'101-SOINS', assistants:[], cls:'enspro', type:'pro' },
+    { day:4, start:'14h', end:'15h', name:'ENS PRO', teacher:'BOUZERMA S.', room:'101-SOINS', assistants:['MIREMONT L.'], cls:'enspro', type:'pro' },
+    { day:4, start:'16h', end:'17h', name:'ENS PRO', teacher:'BOUZERMA S.', room:'101-SOINS', assistants:[], cls:'enspro', type:'pro' }
+  ],
+  5: [
+    { day:5, start:'09h', end:'10h', name:'HG EMC / Francais Q1-Q2', teacher:'NOUHAUD M.', room:'114-LV', assistants:[], cls:'hgemc', type:'general' },
+    { day:5, start:'10h', end:'11h', name:'Mathematiques Q1', teacher:'MARIGNAC M.', room:'109-SCIENCES', assistants:[], cls:'maths', type:'maths' },
+    { day:5, start:'11h', end:'12h', name:'Co-inter FR', teacher:'BAROUSSE A., NOUHAUD M.', room:'117', assistants:[], cls:'coint', type:'co-intervention' },
+    { day:5, start:'13h', end:'15h', name:'Realisation projet', teacher:'NOUHAUD M., RIVIERE I.', room:'103-ANIMATION', assistants:['NUNES L.'], cls:'real', type:'projet' },
+    { day:5, start:'15h', end:'16h', name:'AP FR', teacher:'NOUHAUD M., PAMPALONE C.', room:'118', assistants:['NUNES L.'], cls:'francais', type:'ap' },
+    { day:5, start:'16h', end:'17h', name:'Arts appliques', teacher:'PALOMEQUE J.', room:'201-ART', assistants:[], cls:'real', type:'arts' }
+  ]
+};
+
+function timeToMinutes(t){
+  const m = String(t).match(/(\d{1,2})h(?:(\d{2}))?/);
+  return m ? parseInt(m[1],10) * 60 + parseInt(m[2] || '0',10) : 0;
+}
+
+function parseISODate(s){
+  const [y,m,d] = s.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function parseISODateNoon(s){
+  const [y,m,d] = s.split('-').map(Number);
+  return new Date(y, m - 1, d, 12, 0, 0, 0);
+}
+
+function formatShortDateISO(s){
+  const d = parseISODate(s);
+  return `${d.getDate()} ${MONTH_NAMES[d.getMonth()]}`;
+}
+
+function formatDayMonthISO(s){
+  const d = parseISODateNoon(s);
+  return `${DAY_NAMES[d.getDay()]} ${d.getDate()} ${MONTH_NAMES[d.getMonth()]}`;
+}
+
+function getNextPfmp(from=new Date()){
+  const today = new Date(from.getFullYear(), from.getMonth(), from.getDate());
+  return CALENDRIER.pfmp
+    .map(p => ({ ...p, startDate:parseISODate(p.start), endDate:parseISODate(p.end) }))
+    .find(p => p.endDate >= today) || null;
+}
+
+function getSchoolWeeksBefore(dateISO, from=new Date()){
+  const target = parseISODate(dateISO);
+  const cursor = new Date(from.getFullYear(), from.getMonth(), from.getDate());
+  let weeks = 0;
+  while (cursor < target){
+    const day = cursor.getDay();
+    const inBreak = CALENDRIER.vacances.some(v => cursor >= parseISODate(v.start) && cursor <= parseISODate(v.end));
+    if (day === 1 && !inBreak) weeks++;
+    cursor.setDate(cursor.getDate() + 1);
+  }
+  return weeks;
+}
+
+function getCalendarCoachContext(){
+  const nextPfmp = getNextPfmp();
+  if (!nextPfmp) return 'Aucune PFMP proche détectée dans le calendrier.';
+  return `Prochaine PFMP : ${nextPfmp.label}, du ${formatShortDateISO(nextPfmp.start)} au ${formatShortDateISO(nextPfmp.end)}. Semaines lycée restantes avant départ : ${getSchoolWeeksBefore(nextPfmp.start)}.`;
+}
+
+function formatPercentFr(value){
+  return `${Number(value).toFixed(1).replace('.', ',')} %`;
+}
+
+function getPfmpProgressData(from=new Date()){
+  const preparationStart = parseISODateNoon(CALENDRIER.preparation_pfmp?.debut || '2026-05-04');
+  const pfmpStartISO = CALENDRIER.pfmp_cible?.debut || '2026-06-08';
+  const pfmpEndISO = CALENDRIER.pfmp_cible?.fin || '2026-07-05';
+  const pfmpStart = parseISODateNoon(pfmpStartISO);
+  const pfmpEnd = parseISODateNoon(pfmpEndISO);
+  const today = new Date(from.getFullYear(), from.getMonth(), from.getDate(), 12, 0, 0, 0);
+  const dayMs = 24 * 60 * 60 * 1000;
+  const totalDurationMs = Math.max(dayMs, pfmpStart - preparationStart);
+  const elapsedMs = today - preparationStart;
+  const remainingMs = pfmpStart - today;
+  const rawPercent = (elapsedMs / totalDurationMs) * 100;
+  const progressPercent = Math.max(0, Math.min(100, rawPercent));
+  const daysRemaining = Math.max(0, Math.ceil(remainingMs / dayMs));
+  const weeksRemaining = Math.max(0, Math.ceil(daysRemaining / 7));
+  let status = 'preparing';
+  let label = `${formatPercentFr(progressPercent)} du temps de préparation parcouru.`;
+  if (today < preparationStart){
+    status = 'before';
+    label = 'La préparation commence bientôt.';
+  } else if (today.getTime() === pfmpStart.getTime()){
+    status = 'today';
+    label = "C'est le départ PFMP aujourd'hui.";
+  } else if (today > pfmpStart && today <= pfmpEnd){
+    status = 'during';
+    label = 'PFMP en cours.';
+  } else if (today > pfmpEnd){
+    status = 'after';
+    label = 'PFMP terminée.';
+  }
+  return {
+    startDate: preparationStart,
+    endDate: pfmpStart,
+    today,
+    totalDurationMs,
+    elapsedMs,
+    remainingMs,
+    progressPercent,
+    progressPercentLabel: formatPercentFr(progressPercent),
+    daysRemaining,
+    weeksRemaining,
+    positionPercent: progressPercent,
+    percent: Math.round(progressPercent),
+    status,
+    label,
+    startLabel: formatDayMonthISO(pfmpStartISO)
+  };
+}
+
+function getPfmpProgress(from=new Date()){
+  return getPfmpProgressData(from);
+}
+
+function isPfmpCelebrationWindow(date=new Date()){
+  const start = new Date(2026, 5, 5, 17, 0, 0, 0);
+  const end = new Date(2026, 5, 6, 8, 0, 0, 0);
+  return date >= start && date < end;
+}
+
+function getPfmpCelebrationText(){
+  return {
+    title:'Fin des cours, cap sur la PFMP',
+    body:"Bravo Pierre. Les cours se terminent aujourd’hui. Lundi, tu entres en PFMP. Ce soir, souffle un peu, puis vérifie juste l’essentiel pour partir plus tranquille."
+  };
+}
+
+function lessonDetail(lesson, opts={}){
+  const dayPart = opts.withDay ? `${DAY_NAMES[lesson.day]} ` : '';
+  const room = lesson.room ? ` - ${lesson.room}` : '';
+  return `${dayPart}${lesson.start} - ${lesson.end}${room}`;
+}
+
+function getNextLessonToday(){
+  const now = new Date();
+  const today = now.getDay();
+  const currentMinutes = now.getHours() * 60 + now.getMinutes();
+  for (let offset = 0; offset < 7; offset++){
+    const day = ((today + offset - 1 + 7) % 7) + 1;
+    const lessons = (EDT[day] || []).slice().sort((a,b) => timeToMinutes(a.start) - timeToMinutes(b.start));
+    const next = lessons.find(l => offset > 0 || timeToMinutes(l.end) > currentMinutes);
+    if (next){
+      return { ...next, detail: lessonDetail(next, { withDay: offset > 0 }) };
+    }
+  }
+  return null;
+}
+
+let planningSelectedDay = (new Date().getDay() === 0 || new Date().getDay() === 6) ? 1 : new Date().getDay();
+
+function renderPfmpCard(){
+  const now = new Date();
+  const progress = getPfmpProgressData();
+  const card = document.querySelector('.pfmp-card');
+  const title = document.getElementById('pfmpTitle');
+  const countdown = document.getElementById('pfmpCountdown');
+  const main = document.getElementById('pfmpMain');
+  const date = document.getElementById('pfmpDate');
+  const sub = document.getElementById('pfmpSub');
+  const daysChip = document.getElementById('pfmpDaysChip');
+  const weeksChip = document.getElementById('pfmpWeeksChip');
+  const percentText = document.getElementById('pfmpPercentText');
+  const humanText = document.getElementById('pfmpHumanText');
+  const actionText = document.getElementById('pfmpActionText');
+  const timeline = document.querySelector('.pfmp-timeline');
+  if (!card || !title || !countdown || !main || !date || !sub || !daysChip || !weeksChip || !percentText || !timeline || !actionText) return;
+
+  card.classList.remove('is-close','is-week','is-active');
+  date.textContent = `Départ PFMP · ${progress.startLabel}`;
+  daysChip.textContent = `${progress.daysRemaining} jour${progress.daysRemaining > 1 ? 's' : ''}`;
+  weeksChip.textContent = `${progress.weeksRemaining} semaine${progress.weeksRemaining > 1 ? 's' : ''}`;
+
+  if (isPfmpCelebrationWindow(now)){
+    card.classList.add('is-week');
+    title.textContent = 'Fin des cours, cap sur la PFMP';
+    countdown.textContent = `J-${progress.daysRemaining}`;
+    main.textContent = 'Lundi, tu entres en PFMP.';
+    sub.textContent = 'Ce soir, souffle un peu, puis vérifie juste l’essentiel.';
+    percentText.textContent = `${progress.progressPercentLabel} du temps de préparation parcouru`;
+    if (humanText) humanText.textContent = 'Transition vers le stage.';
+    actionText.textContent = 'Prépare seulement l’essentiel pour partir plus tranquille.';
+  } else if (progress.status === 'today' || progress.status === 'during' || progress.status === 'after'){
+    card.classList.add('is-active');
+    title.textContent = 'PFMP en cours';
+    countdown.textContent = 'PFMP';
+    main.textContent = 'Tu y es. Maintenant, on avance jour après jour.';
+    sub.textContent = 'Un repère simple chaque jour : observer, demander, noter.';
+    percentText.textContent = 'Suivi de stage lancé.';
+    if (humanText) humanText.textContent = 'La préparation devient une présence sur le terrain.';
+    actionText.textContent = 'Note une situation vue aujourd’hui ou une question à poser.';
+  } else if (progress.daysRemaining <= 7){
+    card.classList.add('is-week');
+    title.textContent = 'Semaine de départ';
+    countdown.textContent = `J-${progress.daysRemaining}`;
+    main.textContent = 'Tu y es presque. On prépare l’entrée en stage.';
+    sub.textContent = 'Rassurant et concret : affaires, documents, horaires.';
+    percentText.textContent = `${progress.progressPercentLabel} du temps de préparation parcouru`;
+    if (humanText) humanText.textContent = 'Derniers repères avant lundi.';
+    actionText.textContent = 'Vérifie affaires, documents, tenue et horaires.';
+  } else if (progress.daysRemaining <= 21){
+    card.classList.add('is-close');
+    title.textContent = 'PFMP en approche';
+    countdown.textContent = `J-${progress.daysRemaining}`;
+    main.textContent = 'La préparation devient plus concrète.';
+    sub.textContent = 'Tu avances vers ton stage, un pas après l’autre.';
+    percentText.textContent = `${progress.progressPercentLabel} du temps de préparation parcouru`;
+    if (humanText) humanText.textContent = 'On prépare maintenant les repères utiles.';
+    actionText.textContent = 'Prépare un document, relis un protocole ou vérifie les horaires.';
+  } else {
+    title.textContent = 'Cap sur la PFMP';
+    countdown.textContent = `J-${progress.daysRemaining}`;
+    main.textContent = 'Tu avances vers ton stage';
+    sub.textContent = 'Tu avances vers ton stage, un pas après l’autre.';
+    percentText.textContent = `${progress.progressPercentLabel} du temps de préparation parcouru`;
+    if (humanText) humanText.textContent = 'Préparation progressive, sans pression.';
+    actionText.textContent = 'Vérifie Pronote ou relis 1 fiche ENS PRO.';
+  }
+  timeline.style.setProperty('--pfmp-percent', `${progress.positionPercent}%`);
+}
+
+function renderPlanning(){
+  renderPfmpCard();
+  const chips = document.getElementById('dayChips');
+  const days = [
+    {n:1, name:'LUN'},{n:2, name:'MAR'},{n:3, name:'MER'},{n:4, name:'JEU'},{n:5, name:'VEN'}
+  ];
+  const now = new Date();
+  const monday = new Date(now);
+  const dow = now.getDay();
+  const diff = (dow === 0 ? -6 : 1 - dow);
+  monday.setDate(now.getDate() + diff);
+
+  if (chips){
+    chips.innerHTML = days.map(d => {
+      const dt = new Date(monday); dt.setDate(monday.getDate() + (d.n-1));
+      return `<button class="day-chip ${d.n===planningSelectedDay?'active':''}" data-day="${d.n}">
+        <div class="day-name">${d.name}</div>
+        <div class="day-num">${dt.getDate()}</div>
+      </button>`;
+    }).join('');
+
+    chips.querySelectorAll('.day-chip').forEach(c => {
+      c.addEventListener('click', () => {
+        planningSelectedDay = parseInt(c.dataset.day);
+        renderPlanning();
+      });
+    });
+  }
+
+  const headDate = new Date(monday); headDate.setDate(monday.getDate() + (planningSelectedDay-1));
+  document.getElementById('dayHeader').textContent = `${DAY_NAMES[headDate.getDay()]} ${headDate.getDate()} ${MONTH_NAMES[headDate.getMonth()]}`;
+  document.getElementById('planningWeek').textContent = `semaine du ${monday.getDate()} ${MONTH_NAMES[monday.getMonth()]}`;
+  const planningNote = document.querySelector('#screen-planning .planning-note div');
+  const nextPfmp = getNextPfmp(now);
+  if (planningNote && nextPfmp){
+    planningNote.innerHTML = `Les horaires peuvent changer. <strong>Pense à vérifier Pronote</strong>. PFMP : ${escapeHTML(formatShortDateISO(nextPfmp.start))} - ${escapeHTML(formatShortDateISO(nextPfmp.end))} (${getSchoolWeeksBefore(nextPfmp.start, now)} semaines lycée).`;
+  }
+
+  const boardHeader = document.getElementById('boardHeader');
+  const boardGrid = document.getElementById('boardGrid');
+  if (boardHeader && boardGrid){
+    boardHeader.innerHTML = `<div class="corner"></div>` + days.map(d => {
+      const dt = new Date(monday); dt.setDate(monday.getDate() + (d.n-1));
+      const isToday = dt.toDateString() === now.toDateString();
+      return `<button class="col-day ${isToday?'today':''}" data-day="${d.n}" type="button">${d.name}<span class="num">${dt.getDate()}</span></button>`;
+    }).join('');
+    boardHeader.querySelectorAll('.col-day').forEach(c => {
+      c.addEventListener('click', () => {
+        planningSelectedDay = parseInt(c.dataset.day);
+        renderPlanning();
+      });
+    });
+    const boardHours = ['08h','09h','10h','11h','12h','13h','14h','15h','16h','17h'];
+    boardGrid.innerHTML = boardHours.map(h => {
+      const row = [`<div class="board-time">${h}</div>`];
+      days.forEach(d => {
+        const lesson = (EDT[d.n] || []).find(l => l.start === h);
+        row.push(`<div class="board-cell">${lesson ? `<div class="board-block ${lesson.cls}" title="${escapeHTML(lessonDetail(lesson))}">${escapeHTML(lesson.name)}</div>` : ''}</div>`);
+      });
+      return row.join('');
+    }).join('');
+  }
+
+  const tl = document.getElementById('timeline');
+  const lessons = EDT[planningSelectedDay] || [];
+  const hours = ['08h','09h','10h','11h','12h','13h','14h','15h','16h','17h'];
+  tl.innerHTML = hours.map(h => {
+    const lesson = lessons.find(l => l.start === h);
+    if (lesson){
+      const acc = lesson.assistants?.length ? ` - acc. ${lesson.assistants.join(', ')}` : '';
+      return `<div class="time-row">
+        <span class="time-label">${h}</span>
+        <div class="lesson ${lesson.cls}">
+          <div class="lesson-name">${escapeHTML(lesson.name)}</div>
+          <div class="lesson-meta">${escapeHTML(lessonDetail(lesson))}</div>
+          <div class="lesson-meta">${escapeHTML(lesson.teacher + acc)}</div>
+        </div>
+      </div>`;
+    }
+    if (h === '12h'){
+      return `<div class="time-row">
+        <span class="time-label">${h}</span>
+        <div class="lesson empty">Pause dejeuner</div>
+      </div>`;
+    }
+    return `<div class="time-row">
+      <span class="time-label">${h}</span>
+      <div class="lesson empty">-</div>
+    </div>`;
+  }).join('');
+}
+/* ============================================================
+   COACH
+   ============================================================ */
+const chatArea = document.getElementById('chatArea');
+const chatInput = document.getElementById('chatInput');
+let pendingPhoto = null; // { dataURL, name }
+
+function renderCoachGuidance(){
+  const guidance = getGuidanceContext();
+  const chips = document.querySelectorAll('#suggestions .sugg-chip');
+  chips.forEach((chip, i) => {
+    const question = guidance.quickQuestions[i];
+    if (question){
+      chip.textContent = question;
+      chip.dataset.prompt = question;
+      chip.style.display = '';
+    } else {
+      chip.style.display = 'none';
+    }
+  });
+  const intent = document.querySelector('.coach-intent');
+  if (intent) intent.textContent = guidance.coachOpening;
+}
+
+function renderChat(){
+  renderCoachGuidance();
+  chatArea.innerHTML = '';
+  if (!state.coachHistory.length){
+    pushBubble('coach', getGuidanceContext().coachOpening, { speak:false });
+    return;
+  }
+  state.coachHistory.slice(-30).forEach(m => pushBubble(m.role, m.text, { img:m.img, speak:m.role==='coach' }));
+}
+
+function pushBubble(role, text, opts={}){
+  const b = document.createElement('div');
+  b.className = 'bubble ' + (role === 'user' ? 'user' : 'coach');
+  const who = role === 'user' ? 'toi' : 'Flux';
+  let html = `<span class="who">${who}</span>${escapeHTML(text).replace(/\n/g,'<br>')}`;
+  if (opts.img) html += `<br><img src="${opts.img}" alt="photo">`;
+  if (opts.speak && role === 'coach') html += `<button class="speak-btn" data-speak="${encodeURIComponent(text)}">▶︎ écouter</button>`;
+  b.innerHTML = html;
+  chatArea.appendChild(b);
+  chatArea.scrollTop = chatArea.scrollHeight;
+  // attach speak
+  const sb = b.querySelector('.speak-btn');
+  if (sb) sb.addEventListener('click', () => speak(decodeURIComponent(sb.dataset.speak)));
+}
+
+function pushTyping(){
+  const b = document.createElement('div');
+  b.className = 'bubble coach';
+  b.id = '__typing';
+  b.innerHTML = `<span class="who">Flux</span><span class="typing-dots"><span></span><span></span><span></span></span>`;
+  chatArea.appendChild(b);
+  chatArea.scrollTop = chatArea.scrollHeight;
+}
+function popTyping(){ const t = document.getElementById('__typing'); if (t) t.remove(); }
+
+document.getElementById('sendBtn').addEventListener('click', sendCoach);
+chatInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); sendCoach(); }
+});
+chatInput.addEventListener('input', () => {
+  chatInput.style.height = 'auto';
+  chatInput.style.height = Math.min(120, chatInput.scrollHeight) + 'px';
+});
+
+document.querySelectorAll('.sugg-chip').forEach(c => {
+  c.addEventListener('click', () => {
+    const map = {
+      commencer: "Je veux commencer mais je ne sais pas par quoi.",
+      comprendre: "Je n'ai pas compris la consigne. Aide-moi à la décoder.",
+      organiser: "Aide-moi à m'organiser pour aujourd'hui.",
+      bloque: "Je bloque sur un exercice.",
+      photo: "Je vais envoyer une photo de consigne. Aide-moi à comprendre ce qu'il faut faire."
+    };
+    chatInput.value = c.dataset.prompt || map[c.dataset.sugg] || '';
+    sendCoach();
+  });
+});
+
+document.getElementById('photoBtn').addEventListener('click', () => document.getElementById('photoInput').click());
+document.getElementById('photoInput').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    pendingPhoto = { dataURL: ev.target.result, name: file.name };
+    renderPhotoPreview();
+  };
+  reader.readAsDataURL(file);
+});
+
+function renderPhotoPreview(){
+  const box = document.getElementById('photoPreviewBox');
+  if (!pendingPhoto){ box.innerHTML = ''; return; }
+  box.innerHTML = `
+    <div class="photo-preview">
+      <img src="${pendingPhoto.dataURL}" alt="aperçu">
+      <span>Photo prête à envoyer</span>
+      <button id="cancelPhoto">retirer</button>
+    </div>`;
+  document.getElementById('cancelPhoto').addEventListener('click', () => { pendingPhoto = null; renderPhotoPreview(); });
+}
+
+async function sendCoach(){
+  const txt = chatInput.value.trim();
+  if (!txt && !pendingPhoto) return;
+  const userMsg = { role:'user', text: txt || '(photo)', img: pendingPhoto?.dataURL };
+  state.coachHistory.push(userMsg);
+  pushBubble('user', userMsg.text, { img:userMsg.img });
+  chatInput.value = '';
+  chatInput.style.height = 'auto';
+  const photo = pendingPhoto; pendingPhoto = null; renderPhotoPreview();
+
+  pushTyping();
+  let reply;
+  try {
+    if (state.apiKeys.gemini){
+      reply = await callGemini(txt, photo);
+    } else {
+      reply = localCoachReply(txt, !!photo);
+    }
+  } catch(e){
+    reply = "Je n'arrive pas à joindre l'IA pour le moment. On peut quand même travailler ensemble : reformule ta question en une phrase, je te guide.";
+  }
+  popTyping();
+  state.coachHistory.push({ role:'coach', text:reply });
+  state.xp += 2;
+  state.progress.curiosite = Math.min(100, state.progress.curiosite + 1);
+  ensureBadge(photo ? 'photo-understand' : 'asked-method');
+  saveState();
+  pushBubble('coach', reply, { speak:true });
+  renderPlant();
+  renderProgress();
+}
+
+function sendCoachAuto(txt){
+  chatInput.value = txt;
+  sendCoach();
+}
+
+/* coach local — pédagogique, jamais de réponse directe */
+function localCoachReply(txt, hasPhoto){
+  const t = txt.toLowerCase();
+  if (hasPhoto){
+    return "Merci pour la photo. Avant de regarder la solution, lis la consigne à voix haute. Souligne le verbe d'action (calcule, explique, recopie…). Dis-moi : quel est ce verbe ?";
+  }
+  if (/commenc|démarr|demarr|par quoi|sais pas/.test(t)){
+    return "On va faire simple. 1) Quelle matière ? 2) Quel exercice ou quelle page ? Réponds en une phrase, et je te propose la première micro-action (2 minutes, pas plus).";
+  }
+  if (/compren|consigne|comprends pas|comprend pas|sais pas ce/.test(t)){
+    return "Bien. Recopie la consigne ici, mot pour mot. On va la décortiquer ensemble : verbe d'action, ce qu'on demande, ce qu'on a déjà.";
+  }
+  if (/organis/.test(t)){
+    return "Regarde ton planning. Choisis UNE seule chose à faire dans les 15 prochaines minutes. Laquelle ? On démarre par celle-là.";
+  }
+  if (/bloqu|coince|coincé|stuck/.test(t)){
+    return "Pas grave, ça arrive. Dis-moi : à quel moment précis tu bloques ? La première ligne, le calcul, la rédaction ? Je t'aide à débloquer ce point précis.";
+  }
+  if (/réponse|reponse|résultat|resultat|solution/.test(t)){
+    return "Je ne donne pas la réponse. Ce n'est pas mon rôle. Mais je peux t'aider à trouver la méthode. Quelle est la première étape que tu vois ?";
+  }
+  if (/merci|ok|d'accord|daccord/.test(t)){
+    return "Avec plaisir. Quand tu as fait ta micro-action, reviens me dire où tu en es.";
+  }
+  // fallback générique pédagogique
+  return "Reformule ce que tu veux faire en une phrase courte. Ensuite, dis-moi : quelle serait la toute première étape à essayer ? On part de là.";
+}
+
+const COACH_SYSTEM_PROMPT = `
+Tu es Flux, le coach quotidien de Pierre.
+
+IDENTITÉ
+Tu accompagnes Pierre, élève de CAP AAGA en dispositif ULIS.
+Pierre a de bonnes compétences à l’oral, mais il se fatigue vite, peut décrocher à la première difficulté, et a tendance à utiliser l’IA pour faire à sa place.
+Ton rôle est de l’aider à commencer, comprendre, s’organiser et persévérer.
+Tu n’es pas un professeur qui donne un cours complet.
+Tu n’es pas un assistant qui fait les devoirs.
+Tu es un coach d’autonomie.
+
+MISSION PRINCIPALE
+Aider Pierre à :
+1. savoir où il en est ;
+2. comprendre ce qu’il doit faire maintenant ;
+3. commencer par une action simple ;
+4. utiliser une méthode ;
+5. aller vers une ressource utile ;
+6. demander de l’aide humaine si nécessaire.
+
+RÈGLE ABSOLUE
+Tu ne fais jamais le travail scolaire à la place de Pierre.
+
+Tu ne dois pas :
+- donner directement la réponse à un exercice ;
+- rédiger entièrement un devoir ;
+- faire un calcul final à sa place ;
+- traduire entièrement un texte à sa place ;
+- produire une réponse prête à recopier ;
+- inventer une information de cours ;
+- faire semblant d’avoir accès à Pronote, à son cahier ou à ses documents si ce n’est pas fourni.
+
+Tu peux :
+- reformuler une consigne ;
+- expliquer ce qu’on attend ;
+- identifier la matière ou le type de tâche ;
+- proposer une méthode ;
+- donner un exemple très court non recopiable ;
+- poser une question d’amorce ;
+- aider à faire un plan ;
+- proposer une première étape ;
+- orienter vers une ressource externe.
+
+FORMULE À UTILISER SI PIERRE DEMANDE LA RÉPONSE
+Si Pierre demande explicitement de faire à sa place, réponds :
+"Je ne vais pas répondre à ta place. Par contre, je peux t’aider à comprendre ce qu’il faut faire et à commencer."
+
+Puis donne une seule première étape.
+
+STYLE
+- Tu tutoies Pierre.
+- Tu réponds en français simple, naturel et direct.
+- Tu écris court : 3 à 6 phrases maximum.
+- Tu évites les grands paragraphes.
+- Tu évites le ton scolaire lourd.
+- Tu n’utilises pas de morale.
+- Tu n’infantilises jamais Pierre.
+- Tu évites les encouragements creux du type "Bravo champion".
+- Tu peux être chaleureux et légèrement humoristique, mais toujours sobre.
+- Tu termines presque toujours par une action concrète ou une question simple.
+
+FORMAT DE RÉPONSE PAR DÉFAUT
+Quand Pierre demande de l’aide, réponds selon ce schéma :
+
+1. Ce que je comprends :
+Reformule en une phrase ce qu’il doit faire.
+
+2. Méthode :
+Donne une méthode simple ou une première étape.
+
+3. Action :
+Dis exactement ce qu’il peut faire maintenant.
+
+Ne mets pas forcément les titres si la réponse est courte.
+Ne donne jamais une longue liste.
+
+SI PIERRE ENVOIE UNE PHOTO
+Tu analyses l’image si elle est disponible.
+Tu dois :
+1. identifier la matière probable ;
+2. reformuler la consigne ;
+3. dire ce qu’il faut faire sans résoudre l’exercice ;
+4. proposer une méthode ;
+5. poser une question d’amorce.
+
+Tu ne dois jamais recopier une réponse complète depuis l’image.
+Tu ne dois jamais résoudre entièrement l’exercice visible.
+
+Exemple :
+"On dirait un exercice de maths sur les proportions. On te demande surtout de repérer les données utiles avant de calculer. Commence par entourer ce qu’on connaît et souligne ce qu’on cherche. Quelle est la quantité de départ ?"
+
+SI PIERRE DIT "JE NE COMPRENDS PAS"
+Ne réponds pas par un long cours.
+Réponds en trois temps :
+- "On va réduire."
+- reformule la consigne ou la notion ;
+- donne une seule action de départ.
+
+Exemple :
+"On va réduire. Là, on te demande surtout d’identifier le problème, pas de tout expliquer. Commence par écrire : Qui est concerné ? Qu’est-ce qui se passe ?"
+
+SI PIERRE DIT "J’AI PAS ENVIE" OU "JE SUIS FATIGUÉ"
+Tu reconnais l’état sans dramatiser.
+Puis tu proposes une action minuscule.
+
+Exemple :
+"Ok, on ne force pas tout de suite. Fais juste l’ouverture : cahier ouvert, titre du cours relu, puis tu t’arrêtes. Après ça, tu me dis si tu continues 5 minutes."
+
+SI PIERRE EST STRESSÉ OU DÉCOURAGÉ
+Tu ne joues pas au psychologue.
+Tu rassures brièvement et tu recentres sur l’action.
+
+Exemple :
+"C’est beaucoup à gérer, donc on ne prend pas tout d’un coup. Là, ton objectif n’est pas de réussir tout le devoir : c’est seulement de comprendre la première consigne. Lis-la et dis-moi le verbe important."
+
+MÉTHODE GÉNÉRALE DE MISE AU TRAVAIL
+Quand Pierre ne sait pas quoi faire, utilise le pipeline :
+
+1. Rappel : je regarde ce qui est demandé.
+2. Rangement : je sors le bon cahier ou le bon document.
+3. Vérification : je regarde Pronote ou la consigne.
+4. Révision : je travaille 10 à 15 minutes.
+5. Blocage : j’utilise QQOQCCP ou je demande de l’aide.
+
+Ne présente pas toujours les 5 étapes.
+Choisis seulement celle qui correspond au blocage du moment.
+
+QQOQCCP
+Pour une situation professionnelle ou une consigne complexe, utilise :
+- Quoi ? Quel est le problème ou la tâche ?
+- Qui ? Qui est concerné ?
+- Où ? Dans quel lieu ?
+- Quand ? À quel moment ?
+- Comment ? Quelles étapes ?
+- Combien ? Quelle quantité, durée, fréquence ?
+- Pourquoi ? Quel objectif ou quelle raison ?
+
+Utilise QQOQCCP surtout en enseignement professionnel, PSE, projet, analyse de situation ou organisation.
+
+MATIÈRES ET AIDES ADAPTÉES
+
+ENSEIGNEMENT PROFESSIONNEL CAP AAGA
+Tu aides Pierre à :
+- comprendre une situation professionnelle ;
+- repérer les personnes concernées ;
+- identifier les étapes d’un protocole ;
+- comprendre le but d’une action ;
+- utiliser QQOQCCP ;
+- faire le lien avec la PFMP.
+
+Tu ne rédiges pas toute l’analyse à sa place.
+
+MATHÉMATIQUES
+Tu aides Pierre à :
+- repérer ce qu’on cherche ;
+- repérer les données utiles ;
+- choisir l’opération ou la méthode ;
+- faire une estimation ;
+- vérifier si le résultat est plausible.
+
+Tu ne donnes pas directement le résultat final si c’est l’objectif de l’exercice.
+
+FRANÇAIS
+Tu aides Pierre à :
+- comprendre une consigne ;
+- trouver les idées ;
+- organiser une réponse ;
+- améliorer une phrase ;
+- relire ce qu’il a déjà écrit.
+
+Tu ne rédiges pas un texte complet prêt à recopier.
+
+HISTOIRE-GÉOGRAPHIE / EMC
+Tu aides Pierre à :
+- identifier le document ;
+- repérer qui parle, quand, où et pourquoi ;
+- comprendre la question ;
+- construire une réponse courte.
+
+Tu ne fournis pas une réponse complète sans participation de Pierre.
+
+PSE
+Tu aides Pierre à :
+- identifier un risque ;
+- repérer une conséquence ;
+- proposer une prévention ;
+- organiser cause → effet → solution.
+
+ESPAGNOL
+Tu aides Pierre à :
+- comprendre une consigne ;
+- repérer les mots connus ;
+- construire une phrase simple ;
+- vérifier un mot ou une tournure.
+
+Tu ne traduis pas tout le travail à sa place.
+
+ARTS APPLIQUÉS
+Tu aides Pierre à :
+- observer ;
+- décrire ;
+- analyser ;
+- proposer une piste de création ;
+- commencer par un croquis ou une idée simple.
+
+PFMP
+La PFMP démarre le lundi 8 juin 2026.
+Tu dois en parler comme d’un objectif concret et motivant, sans mettre la pression.
+Formulations possibles :
+- "On prépare la PFMP petit à petit."
+- "Chaque petit pas maintenant t’aidera en stage."
+- "Pas besoin d’être prêt d’un coup : aujourd’hui, on prépare une seule chose."
+
+Si la PFMP approche, propose des actions simples :
+- vérifier les horaires ;
+- préparer les affaires ;
+- relire une fiche ENS PRO ;
+- s’entraîner à expliquer une situation ;
+- vérifier Pronote ;
+- poser une question à un adulte si quelque chose manque.
+
+RESSOURCES EXTERNES
+Tu peux orienter Pierre vers :
+
+Pronote :
+Pour vérifier les devoirs, les cours, les changements d’emploi du temps.
+
+NotebookLM :
+https://notebooklm.google.com/
+Pour charger un cours, générer un résumé, un quiz ou un podcast.
+
+LearningApps :
+https://learningapps.org/
+Pour faire des exercices interactifs.
+
+Maths Mr Dumoulin CAP :
+https://sites.google.com/site/mathsmrdumoulin/math%C3%A9matiques/cap?authuser=0
+Pour revoir des notions de maths niveau CAP.
+
+MathsSciences35 CAP :
+https://mathsciences35.jimdofree.com/maths/maths-cap/
+Pour réviser les maths en CAP.
+
+Lumni :
+Pour revoir une notion d’histoire, géographie, EMC ou culture générale.
+
+INRS :
+Pour les notions de prévention, sécurité, risques professionnels.
+
+RÈGLE SUR LES RESSOURCES
+Ne donne qu’une ressource à la fois, sauf si Pierre demande plusieurs options.
+Explique toujours pourquoi tu proposes cette ressource.
+
+EXEMPLES DE BONNES RÉPONSES
+
+Si Pierre dit : "Fais-moi l’exercice"
+Réponds :
+"Je ne vais pas le faire à ta place. Par contre, je peux t’aider à démarrer. Envoie la consigne ou une photo, et on repère ensemble ce qu’on te demande."
+
+Si Pierre dit : "Je comprends rien"
+Réponds :
+"On va réduire. Lis seulement la première phrase de la consigne et cherche le verbe important : expliquer, calculer, relever, comparer… Tu me l’écris ici."
+
+Si Pierre envoie une photo de maths
+Réponds :
+"Je vois un exercice de maths. Avant de calculer, il faut repérer deux choses : ce qu’on connaît et ce qu’on cherche. Entoure les nombres utiles sur ta feuille, puis dis-moi lequel correspond à la quantité de départ."
+
+Si Pierre bloque en enseignement professionnel
+Réponds :
+"On va utiliser QQOQCCP. Commence par deux questions seulement : Qui est concerné ? Qu’est-ce qui se passe ? Réponds en mots-clés, pas en phrases longues."
+
+SI TU NE SAIS PAS
+Si tu n’as pas assez d’informations, dis-le clairement.
+Tu peux écrire :
+"Je ne sais pas avec certitude, parce que je n’ai pas ton cours sous les yeux."
+Puis propose une action :
+"Envoie une photo de la consigne ou vérifie la fiche sur Pronote."
+
+INTERDICTION D’INVENTER
+N’invente jamais :
+- une information de cours ;
+- une date ;
+- une consigne ;
+- une note ;
+- un contenu Pronote ;
+- une décision d’un professeur ;
+- une information médicale ou administrative.
+
+Si l’information n’est pas fournie, dis :
+"Je ne sais pas."
+
+OBJECTIF FINAL
+À chaque réponse, Pierre doit repartir avec une action simple, faisable maintenant.
+Ton but n’est pas qu’il ait la réponse.
+Ton but est qu’il se remette en mouvement.
+`;
+
+function getTodayCoursesSummary(){
+  const guidance = getGuidanceContext();
+  const lessons = guidance.todayCourses || [];
+  if (!lessons.length) return 'Aucun cours prévu aujourd’hui dans l’emploi du temps.';
+  return lessons.map(l => `${l.start}-${l.end} ${l.name} (${l.room || 'salle non précisée'})`).join(' ; ');
+}
+
+function getCurrentActionLabel(){
+  const guidance = getGuidanceContext();
+  return `${guidance.oneAction.label} — ${guidance.oneAction.detail}`;
+}
+
+function getPipelineSummary(){
+  const guidance = getGuidanceContext();
+  const routine = getRoutineStepsForMoment(guidance.moment);
+  const labels = routine.steps.map(s => s.text.toLowerCase());
+  const done = state.pipeline.steps
+    .map((ok, i) => ok ? labels[i] : null)
+    .filter(Boolean);
+  return done.length ? `Routine lancée : ${done.join(', ')}.` : 'Aucune étape cochée pour le moment.';
+}
+
+function buildDynamicCoachContext(){
+  const guidance = getGuidanceContext();
+  const pfmp = getPfmpProgressData();
+  return `
+CONTEXTE ACTUEL
+Date : ${new Date().toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", year: "numeric" })}
+Heure : ${new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" })}
+Cours du jour : ${getTodayCoursesSummary()}
+Prochaine action conseillée : ${getCurrentActionLabel()}
+PFMP : départ lundi 8 juin 2026
+Temps restant avant PFMP : ${guidance.pfmpDaysLeft} jours
+Progression préparation PFMP : ${pfmp.progressPercentLabel}
+Moment pédagogique : ${guidance.moment}
+Message Flux du moment : ${guidance.mainMessage}
+Pipeline du jour : ${getPipelineSummary()}
+`;
+}
+
+let fluxReminderTimers = [];
+function clearFluxReminderTimers(){
+  fluxReminderTimers.forEach(id => clearTimeout(id));
+  fluxReminderTimers = [];
+}
+
+function maybeSendPfmpCelebrationNotification(date=new Date()){
+  if (!('Notification' in window) || Notification.permission !== 'granted') return false;
+  if (!isPfmpCelebrationWindow(date) || state.guidance.pfmpCelebrationSent) return false;
+  const msg = getPfmpCelebrationText();
+  state.guidance.pfmpCelebrationSent = true;
+  state.guidance.lastNotification = '2026-06-05-pfmp-celebration';
+  saveState();
+  new Notification(msg.title, { body: msg.body, tag:'pfmp-celebration-2026-06-05' });
+  return true;
+}
+
+function scheduleFluxLocalReminders(){
+  if (!('Notification' in window)){
+    toast('Notifications non disponibles ici');
+    return;
+  }
+
+  Notification.requestPermission().then(permission => {
+    if (permission !== 'granted'){
+      toast('Notifications non autorisées');
+      return;
+    }
+
+    state.guidance.remindersEnabled = true;
+    saveState();
+    clearFluxReminderTimers();
+
+    const now = new Date();
+    maybeSendPfmpCelebrationNotification(now);
+    const todayLessons = (EDT[now.getDay()] || []).slice().sort((a,b) => timeToMinutes(a.start) - timeToMinutes(b.start));
+    const first = todayLessons[0];
+    const afternoon = todayLessons.find(l => timeToMinutes(l.start) >= 13 * 60);
+    const last = todayLessons[todayLessons.length - 1];
+    const slots = [];
+
+    if (first){
+      const start = timeToMinutes(first.start);
+      slots.push({ key:'morning', at:new Date(now.getFullYear(), now.getMonth(), now.getDate(), Math.max(0, Math.floor((start - 35) / 60)), (start - 35 + 1440) % 60) });
+    }
+    if (afternoon){
+      const start = timeToMinutes(afternoon.start);
+      slots.push({ key:'midday', at:new Date(now.getFullYear(), now.getMonth(), now.getDate(), Math.floor((start - 20) / 60), (start - 20 + 1440) % 60) });
+    }
+    if (last){
+      const end = timeToMinutes(last.end);
+      slots.push({ key:'evening', at:new Date(now.getFullYear(), now.getMonth(), now.getDate(), Math.floor((end + 45) / 60), (end + 45) % 60) });
+    } else {
+      slots.push({ key:'evening', at:new Date(now.getFullYear(), now.getMonth(), now.getDate(), 18, 0) });
+    }
+
+    slots.forEach(slot => {
+      const delay = slot.at.getTime() - now.getTime();
+      if (delay <= 0 || delay > 24 * 60 * 60 * 1000) return;
+      const timer = setTimeout(() => {
+        const guidance = getGuidanceContext(new Date());
+        const notificationKey = `${todayISO()}-${slot.key}`;
+        if (state.guidance.lastNotification === notificationKey) return;
+        state.guidance.lastNotification = notificationKey;
+        if (slot.key === 'evening') state.guidance.eveningReminderShownDate = todayISO();
+        saveState();
+        new Notification(guidance.notificationTitle, { body: guidance.notificationBody, tag: notificationKey });
+      }, delay);
+      fluxReminderTimers.push(timer);
+    });
+
+    const celebrationAt = new Date(2026, 5, 5, 18, 30, 0, 0);
+    const celebrationDelay = celebrationAt.getTime() - now.getTime();
+    if (!state.guidance.pfmpCelebrationSent && celebrationDelay > 0 && celebrationDelay <= 24 * 60 * 60 * 1000){
+      const timer = setTimeout(() => maybeSendPfmpCelebrationNotification(new Date()), celebrationDelay);
+      fluxReminderTimers.push(timer);
+    }
+
+    showModal('Rappels Flux', `
+      <p class="muted" style="font-size:14px;margin-bottom:12px;">Rappels activés pour les prochains repères de la journée.</p>
+      <p class="muted" style="font-size:14px;">Sur certains téléphones, les rappels fonctionnent surtout quand Flux a été ouvert récemment. Garde le raccourci sur l’écran d’accueil et ouvre Flux chaque matin.</p>
+    `);
+  });
+}
+
+async function callGemini(txt, photo){
+  const key = state.apiKeys.gemini;
+  const model = 'gemini-2.5-flash';
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(key)}`;
+  const dynamicContext = buildDynamicCoachContext();
+  const parts = [{ text: dynamicContext + "\n\nMessage de Pierre : " + (txt || '(photo seule)') }];
+  if (photo){
+    const b64 = photo.dataURL.split(',')[1];
+    const mime = photo.dataURL.match(/^data:(.+);base64/)[1];
+    parts.push({ inline_data: { mime_type: mime, data: b64 } });
+  }
+  const body = {
+    system_instruction: { parts:[{ text: COACH_SYSTEM_PROMPT }] },
+    contents: [{ role:'user', parts }],
+    generationConfig: { temperature: 0.7, maxOutputTokens: 400 }
+  };
+  const r = await fetch(url, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body) });
+  if (!r.ok) throw new Error('gemini http '+r.status);
+  const j = await r.json();
+  return j.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || "Je n'ai pas réussi à formuler de réponse. Reformule ta question s'il te plaît.";
+}
+
+/* ============================================================
+   DICTÉE VOCALE (Web Speech API)
+   ============================================================ */
+let recog = null;
+let recogActive = false;
+const micBtn = document.getElementById('micBtn');
+
+function initSpeech(){
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR){ micBtn.style.opacity = '.4'; return; }
+  recog = new SR();
+  recog.lang = 'fr-FR';
+  recog.continuous = false;
+  recog.interimResults = true;
+  let finalText = '';
+  recog.onresult = e => {
+    let interim = '';
+    for (let i=e.resultIndex; i<e.results.length; i++){
+      const r = e.results[i];
+      if (r.isFinal) finalText += r[0].transcript;
+      else interim += r[0].transcript;
+    }
+    chatInput.value = (finalText + ' ' + interim).trim();
+  };
+  recog.onend = () => {
+    recogActive = false;
+    micBtn.classList.remove('recording');
+    finalText = '';
+  };
+  recog.onerror = () => { recogActive = false; micBtn.classList.remove('recording'); };
+}
+micBtn.addEventListener('click', () => {
+  if (!recog) { toast('Dictée non disponible sur ce navigateur'); return; }
+  if (recogActive){ recog.stop(); return; }
+  try { recog.start(); recogActive = true; micBtn.classList.add('recording'); }
+  catch(e){ recogActive = false; }
+});
+
+/* ============================================================
+   TTS — ElevenLabs si clé, sinon Web Speech synth
+   ============================================================ */
+async function speak(text){
+  if (state.apiKeys.elevenlabs){
+    try { await speakEleven(text); return; } catch(e){}
+  }
+  if ('speechSynthesis' in window){
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'fr-FR';
+    u.rate = 0.95;
+    window.speechSynthesis.speak(u);
+  } else {
+    toast('Lecture vocale non disponible');
+  }
+}
+async function speakEleven(text){
+  const voiceId = '21m00Tcm4TlvDq8ikWAM'; // voix par défaut Rachel
+  const url = `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`;
+  const r = await fetch(url, {
+    method:'POST',
+    headers:{
+      'Content-Type':'application/json',
+      'xi-api-key': state.apiKeys.elevenlabs,
+      'Accept':'audio/mpeg'
+    },
+    body: JSON.stringify({
+      text, model_id:'eleven_multilingual_v2',
+      voice_settings:{ stability:.4, similarity_boost:.7 }
+    })
+  });
+  if (!r.ok) throw new Error('eleven http '+r.status);
+  const blob = await r.blob();
+  const audio = new Audio(URL.createObjectURL(blob));
+  audio.play();
+}
+
+/* ============================================================
+   OUTILS — modal généraliste
+   ============================================================ */
+const modalBg = document.getElementById('modalBg');
+const modalTitle = document.getElementById('modalTitle');
+const modalBody = document.getElementById('modalBody');
+document.getElementById('modalClose').addEventListener('click', closeModal);
+modalBg.addEventListener('click', e => { if (e.target === modalBg) closeModal(); });
+function closeModal(){ modalBg.classList.remove('show'); stopTimer(); }
+
+document.querySelectorAll('.need-btn[data-tool-jump]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = document.getElementById(`tools-${btn.dataset.toolJump}`);
+    if (target) target.scrollIntoView({ behavior:'smooth', block:'start' });
+  });
+});
+
+document.querySelectorAll('.tool-actions [data-tool]').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    openTool(btn.dataset.tool);
+  });
+});
+document.querySelectorAll('.tool-actions a').forEach(link => {
+  link.addEventListener('click', e => e.stopPropagation());
+});
+document.querySelectorAll('.tool-card').forEach(c => {
+  c.addEventListener('click', () => openTool(c.dataset.tool));
+});
+
+function openTool(name){
+  if (name === 'pipeline') return openPipeline();
+  if (name === 'timer') return openTimer();
+  if (name === 'timer-2') return openTimer(2);
+  if (name === 'focus') return openFocus();
+  if (name === 'qqoqccp') return openQQ();
+  if (name === 'coach-qq') return askCoachQQ();
+  if (name === 'rules') return openRules();
+  if (name === 'decroche') return openDecroche();
+  if (name === 'resources') return openResources();
+  if (name === 'badges') return openBadges();
+  if (name === 'settings') return openSettings();
+}
+function showModal(title, html){
+  modalTitle.textContent = title;
+  modalBody.innerHTML = html;
+  modalBg.classList.add('show');
+}
+
+/* pipeline */
+function openPipeline(){
+  const steps = [
+    { t:"Rappel", d:"Je regarde ce que j'ai à faire." },
+    { t:"Rangement", d:"Je sors seulement ce qu'il faut." },
+    { t:"Vérification", d:"Je regarde Pronote." },
+    { t:"Révision", d:"Je fais 15 minutes." },
+    { t:"Blocage", d:"J'utilise QQOQCCP ou Flux." }
+  ];
+  const html = `
+    <p class="muted" style="font-size:14px;margin-bottom:12px;">Cette carte explique la méthode. La routine à cocher au quotidien est sur l'écran Aujourd'hui.</p>
+    <ul class="pipeline-list" id="pipeList">
+      ${steps.map((s,i) => `
+        <li class="pipeline-step" data-i="${i}">
+          <span class="num">${i+1}</span>
+          <div class="step-body">
+            <div class="step-title">${s.t}</div>
+            <div class="step-desc">${s.d}</div>
+          </div>
+        </li>`).join('')}
+    </ul>
+    <p class="muted" style="font-size:13px;margin-top:14px;">Objectif : choisir une seule première étape, puis avancer sans chercher à tout finir d'un coup.</p>
+  `;
+  showModal('Méthode : comment je démarre', html);
+}
+
+/* focus */
+function openFocus(){
+  const html = `
+    <p class="muted" style="font-size:14px;margin-bottom:12px;">Avant de commencer, prends 2 minutes pour revenir ici.</p>
+    <ol class="focus-steps">
+      <li><span class="num">1</span><span><strong>Respiration.</strong> Inspire par le nez 4 secondes. Garde 2 secondes. Expire 5 secondes. Fais-le 3 fois.</span></li>
+      <li><span class="num">2</span><span><strong>Sas.</strong> Coupe les discussions inutiles. Pose le téléphone. Regarde ton cahier.</span></li>
+      <li><span class="num">3</span><span><strong>Point mental.</strong> Dis-toi : qu'est-ce que je dois faire maintenant ?</span></li>
+      <li><span class="num">4</span><span><strong>Départ.</strong> Choisis une seule tâche. Pas tout le travail.</span></li>
+    </ol>
+    <div class="tool-actions" style="margin-top:16px;">
+      <button class="btn btn-primary" type="button" id="focusTwoMin">Lancer 2 minutes</button>
+      <a class="btn btn-soft" href="https://www.youtube.com/watch?v=1b9kiAWkTR8" target="_blank" rel="noopener">Voir la vidéo</a>
+    </div>
+  `;
+  showModal('Me concentrer', html);
+  document.getElementById('focusTwoMin').addEventListener('click', () => openTimer(2));
+}
+
+/* timer */
+let timerInterval = null;
+let timerRemaining = 15*60;
+let timerRunning = false;
+let timerTotal = 15*60;
+function openTimer(minutes){
+  if (minutes){
+    stopTimer();
+    timerTotal = parseInt(minutes) * 60;
+    timerRemaining = timerTotal;
+  }
+  if (!timerRunning) timerRemaining = timerTotal;
+  const isShort = timerTotal === 2*60;
+  const html = `
+    <p class="muted" style="font-size:14px;margin-bottom:8px;text-align:center;">${isShort ? '2 minutes pour se poser.' : '15 minutes pour avancer.'}</p>
+    <div class="timer-display" id="timerDisplay">${fmtTime(timerRemaining)}</div>
+    <div class="timer-label" id="timerLabel">${timerRunning?'en cours…':'prêt à démarrer'}</div>
+    <div class="timer-controls">
+      <button class="btn btn-primary" id="timerStart">${timerRunning?'Pause':'Démarrer'}</button>
+      <button class="btn btn-ghost" id="timerReset">Remise à zéro</button>
+    </div>
+    <div class="timer-presets">
+      <button class="btn btn-sm" data-min="2">2 min</button>
+      <button class="btn btn-sm" data-min="5">5 min</button>
+      <button class="btn btn-sm" data-min="10">10 min</button>
+      <button class="btn btn-sm" data-min="15">15 min</button>
+      <button class="btn btn-sm" data-min="25">25 min</button>
+    </div>
+  `;
+  showModal('Minuteur', html);
+  document.getElementById('timerStart').addEventListener('click', toggleTimer);
+  document.getElementById('timerReset').addEventListener('click', resetTimer);
+  document.querySelectorAll('.timer-presets [data-min]').forEach(b => {
+    b.addEventListener('click', () => {
+      stopTimer();
+      timerTotal = parseInt(b.dataset.min)*60;
+      timerRemaining = timerTotal;
+      document.getElementById('timerDisplay').textContent = fmtTime(timerRemaining);
+    });
+  });
+}
+function fmtTime(s){
+  const m = Math.floor(s/60).toString().padStart(2,'0');
+  const sec = (s%60).toString().padStart(2,'0');
+  return `${m}:${sec}`;
+}
+function toggleTimer(){
+  if (timerRunning){
+    clearInterval(timerInterval);
+    timerRunning = false;
+    document.getElementById('timerStart').textContent = 'Reprendre';
+    document.getElementById('timerLabel').textContent = 'en pause';
+  } else {
+    timerRunning = true;
+    document.getElementById('timerStart').textContent = 'Pause';
+    document.getElementById('timerLabel').textContent = 'en cours…';
+    timerInterval = setInterval(() => {
+      timerRemaining--;
+      const d = document.getElementById('timerDisplay');
+      if (d) d.textContent = fmtTime(timerRemaining);
+      if (timerRemaining <= 0){
+        clearInterval(timerInterval);
+        timerRunning = false;
+        const lab = document.getElementById('timerLabel');
+        if (lab) lab.textContent = 'terminé — bravo';
+        const st = document.getElementById('timerStart');
+        if (st) st.textContent = 'Démarrer';
+        try { navigator.vibrate && navigator.vibrate([200,80,200]); } catch(e){}
+        try { speak("C'est terminé. Tu peux faire une petite pause."); } catch(e){}
+        state.xp += 10;
+        state.progress.concentration = Math.min(100, state.progress.concentration + 8);
+        saveState();
+        renderPlant(); renderProgress();
+      }
+    }, 1000);
+  }
+}
+function resetTimer(){ stopTimer(); timerRemaining = timerTotal; const d = document.getElementById('timerDisplay'); if (d) d.textContent = fmtTime(timerRemaining); const l = document.getElementById('timerLabel'); if (l) l.textContent = 'prêt à démarrer'; const s = document.getElementById('timerStart'); if (s) s.textContent = 'Démarrer'; }
+function stopTimer(){ if (timerInterval){ clearInterval(timerInterval); timerInterval = null; } timerRunning = false; }
+
+/* QQOQCCP */
+function openQQ(){
+  const fields = [
+    { k:'quoi', l:'Quoi ?', h:"Que dois-tu faire exactement ?" },
+    { k:'qui', l:'Qui ?', h:"Pour qui ? Avec qui ?" },
+    { k:'ou', l:'Où ?', h:"Sur quel cahier, quelle page ?" },
+    { k:'quand', l:'Quand ?', h:"Pour quel jour ? Combien de temps ?" },
+    { k:'comment', l:'Comment ?', h:"Quelle méthode connue tu peux utiliser ?" },
+    { k:'combien', l:'Combien ?', h:"Combien d'exercices, de questions ?" },
+    { k:'pourquoi', l:'Pourquoi ?', h:"À quoi ça va te servir ?" }
+  ];
+  const html = `
+    <p class="muted" style="font-size:14px;margin-bottom:14px;">On démonte la consigne. Commence seulement par <strong>Quoi ?</strong> et <strong>Qui ?</strong></p>
+    <div class="qqoqccp-list">
+      ${fields.map(f => `
+        <div class="qq-item">
+          <label>${f.l}</label>
+          <div class="hint">${f.h}</div>
+          <input type="text" data-k="${f.k}" value="${escapeHTML(state.qqoqccp[f.k]||'')}" placeholder="…">
+        </div>`).join('')}
+    </div>
+    <button class="btn btn-primary btn-block" id="qqSave" style="margin-top:18px;">Garder pour cette consigne</button>
+    <button class="btn btn-soft btn-block" id="qqAskCoach" style="margin-top:8px;">Demander à Flux</button>
+    <button class="btn btn-ghost btn-block" id="qqClear" style="margin-top:8px;">Effacer</button>
+  `;
+  showModal('QQOQCCP', html);
+  document.querySelectorAll('.qq-item input').forEach(i => {
+    i.addEventListener('input', () => { state.qqoqccp[i.dataset.k] = i.value; });
+  });
+  document.getElementById('qqSave').addEventListener('click', () => { saveState(); toast('Enregistré'); });
+  document.getElementById('qqAskCoach').addEventListener('click', () => askCoachQQ(true));
+  document.getElementById('qqClear').addEventListener('click', () => {
+    Object.keys(state.qqoqccp).forEach(k => state.qqoqccp[k]='');
+    saveState(); openQQ();
+  });
+}
+
+function askCoachQQ(fromModal=false){
+  if (fromModal) closeModal();
+  showScreen('coach');
+  setTimeout(() => sendCoachAuto("Je bloque sur une consigne. Aide-moi avec QQOQCCP sans me donner la réponse."), 250);
+}
+
+/* règles IA */
+function openRules(){
+  const html = `
+    <p class="muted" style="font-size:14px;margin-bottom:14px;">Flux sert à comprendre et à démarrer. Le travail final reste le tien.</p>
+    <div class="ai-rules-grid">
+      <div class="ai-rule-box">
+        <h3>Tu peux demander</h3>
+        <ul>
+          <li>Explique-moi la consigne.</li>
+          <li>Par où je commence ?</li>
+          <li>Quelle méthode utiliser ?</li>
+          <li>Je t'envoie une photo, aide-moi à comprendre.</li>
+        </ul>
+      </div>
+      <div class="ai-rule-box">
+        <h3>Tu ne demandes pas</h3>
+        <ul>
+          <li>Fais l'exercice.</li>
+          <li>Écris la réponse.</li>
+          <li>Donne-moi le texte tout prêt.</li>
+        </ul>
+      </div>
+    </div>
+  `;
+  showModal('Demander à Flux correctement', html);
+}
+
+/* si je décroche */
+function openDecroche(){
+  const tips = [
+    "Lève-toi.",
+    "Bois une gorgée.",
+    "Respire 4 fois.",
+    "Reviens.",
+    "Ouvre seulement la consigne.",
+    "Demande à Flux : « Par où je redémarre ? »"
+  ];
+  const html = `
+    <p class="muted" style="font-size:15px;margin-bottom:4px;"><strong>Stop. On réduit.</strong></p>
+    <p class="muted" style="font-size:14px;margin-bottom:14px;">Quand l'attention lâche, suis ces étapes sans chercher à tout refaire.</p>
+    <ul class="rule-list">
+      ${tips.map((t,i) => `<li class="${i>=4?'warn':''}"><span class="num">${i+1}</span>${t}</li>`).join('')}
+    </ul>
+    <button class="btn btn-primary btn-block" id="decrocheTimer" style="margin-top:16px;">Lancer 2 minutes</button>
+    <button class="btn btn-soft btn-block" id="goCoach" style="margin-top:8px;">Demander à Flux</button>
+  `;
+  showModal('Je décroche', html);
+  document.getElementById('decrocheTimer').addEventListener('click', () => openTimer(2));
+  document.getElementById('goCoach').addEventListener('click', () => {
+    closeModal();
+    showScreen('coach');
+    setTimeout(() => sendCoachAuto("Par où je redémarre ?"), 250);
+  });
+}
+
+/* ressources */
+function openResources(){
+  const categories = [
+    {
+      title:'Vérifier le travail',
+      items:[
+        { t:'Pronote', s:"Devoirs, cours, changements d'emploi du temps.", url:"https://cas.mon-ent-occitanie.fr/login?service=https:%2F%2F0310033T.index-education.net%2Fpronote%2Fprofesseur.html", hint:"À faire : vérifier ce qui est demandé avant de commencer." }
+      ]
+    },
+    {
+      title:'Comprendre un cours',
+      items:[
+        { t:'NotebookLM', s:"Transformer un cours en résumé, quiz ou podcast.", url:"https://notebooklm.google.com/", hint:"À demander : explique-moi ce cours en version simple." },
+        { t:'Lumni', s:"Histoire, géographie, EMC, culture générale.", url:"https://www.lumni.fr/", hint:"Utile pour revoir une notion en vidéo." },
+        { t:'INRS', s:"Prévention, risques, sécurité, PSE.", url:"https://www.inrs.fr/", hint:"Utile pour les situations professionnelles et la sécurité." }
+      ]
+    },
+    {
+      title:'Réviser les maths',
+      items:[
+        { t:'Maths Mr Dumoulin', s:"Cours et exercices CAP.", url:"https://sites.google.com/site/mathsmrdumoulin/math%C3%A9matiques/cap?authuser=0", hint:"À choisir : une notion, puis un exercice court." },
+        { t:'MathsSciences35', s:"Révisions maths CAP.", url:"https://mathsciences35.jimdofree.com/maths/maths-cap/", hint:"Utile pour reprendre une méthode pas à pas." }
+      ]
+    },
+    {
+      title:'Langues et mots',
+      items:[
+        { t:'WordReference', s:"Chercher un mot et comparer les sens.", url:"https://www.wordreference.com/esfr/", hint:"À utiliser pour vérifier un mot, pas traduire tout le travail." }
+      ]
+    }
+  ];
+  const html = `
+    <p class="muted" style="font-size:14px;margin-bottom:14px;">Choisis une ressource selon ton besoin. Une seule à la fois.</p>
+    <div class="resource-list">
+      ${categories.map(cat => `
+        <section class="resource-category">
+          <h3 class="resource-category-title">${cat.title}</h3>
+          <div class="resource-cards">
+            ${cat.items.map(r => `
+              <article class="resource-card">
+                <div class="resource-card-head">
+                  <div>
+                    <h3>${r.t}</h3>
+                    <p>${r.s}</p>
+                  </div>
+                  <a class="btn btn-soft" href="${r.url}" target="_blank" rel="noopener">Ouvrir</a>
+                </div>
+                <small class="resource-hint">${r.hint}</small>
+              </article>
+            `).join('')}
+          </div>
+        </section>
+      `).join('')}
+    </div>
+  `;
+  showModal('Sites utiles', html);
+}
+
+/* badges */
+function openBadges(){
+  const all = getAutonomyBadges();
+  saveState();
+  const autonomie = Math.min(100, state.progress.autonomie || 0);
+  const doneToday = (state.pipeline.steps || []).some(Boolean);
+  const traces = getAutonomyTraces();
+
+  const html = `
+    <p class="muted" style="font-size:14px;margin-bottom:6px;">Niveau d'autonomie : ${Math.max(1, Math.ceil(autonomie/20))}</p>
+    <p class="muted" style="font-size:14px;margin-bottom:14px;">Jardin : ${doneToday ? "arrosé aujourd'hui" : "pas encore arrosé aujourd'hui"}.</p>
+    <div class="plant-traces" style="margin-bottom:14px;">
+      ${(traces.length ? traces : ['une routine à lancer aujourd’hui.']).map(t => `<span>Trace récente : ${escapeHTML(t)}</span>`).join('')}
+    </div>
+    <div class="badges-row">
+      ${all.map(b => `
+        <div class="badge ${state.badges.includes(b.id)?'':'locked'}" title="${b.hint}">
+          <span class="b-icon">
+            <svg viewBox="0 0 16 16" fill="${state.badges.includes(b.id)?'#C9784A':'#9A8B77'}">
+              <path d="M5 1 h6 l-1 4 l3 3 l-5 6 l-5 -6 l3 -3 z"/>
+            </svg>
+          </span>
+          ${b.name}
+        </div>`).join('')}
+    </div>
+    <p class="muted" style="font-size:12px;margin-top:14px;">Ces traces décrivent des stratégies utiles. Elles ne sont pas un classement.</p>
+  `;
+  showModal('Mon autonomie', html);
+}
+
+/* settings */
+function openSettings(){
+  const html = `
+    <p class="muted" style="font-size:13px;margin-bottom:14px;">Les clés restent sur ton appareil. Sans clé, le coach fonctionne en mode guide local.</p>
+    <div class="settings-row">
+      <label for="kGemini">Clé API Gemini (coach)</label>
+      <input type="password" id="kGemini" value="${escapeHTML(state.apiKeys.gemini||'')}" placeholder="AIza…">
+      <span class="hint">Optionnel. Modèle utilisé : gemini-2.5-flash.</span>
+    </div>
+    <div class="settings-row">
+      <label for="kEleven">Clé API ElevenLabs (voix du coach)</label>
+      <input type="password" id="kEleven" value="${escapeHTML(state.apiKeys.elevenlabs||'')}" placeholder="sk_…">
+      <span class="hint">Optionnel. Sinon, voix du système.</span>
+    </div>
+    <div class="settings-row">
+      <label>Rappels Flux</label>
+      <span class="hint">Flux peut préparer des rappels locaux pour le matin, la reprise et le soir.</span>
+      <button class="btn btn-soft btn-block" id="enableFluxReminders" type="button">Activer les rappels Flux</button>
+      <span class="hint">Sur certains téléphones, les rappels fonctionnent surtout quand Flux a été ouvert récemment.</span>
+    </div>
+    <button class="btn btn-primary btn-block" id="saveKeys">Enregistrer</button>
+    <button class="btn btn-ghost btn-block" id="resetAll" style="margin-top:14px;color:var(--terracotta);">Effacer toutes les données locales</button>
+  `;
+  showModal('Réglages', html);
+  document.getElementById('enableFluxReminders')?.addEventListener('click', scheduleFluxLocalReminders);
+  document.getElementById('saveKeys').addEventListener('click', () => {
+    state.apiKeys.gemini = document.getElementById('kGemini').value.trim();
+    state.apiKeys.elevenlabs = document.getElementById('kEleven').value.trim();
+    saveState(); toast('Clés enregistrées');
+  });
+  document.getElementById('resetAll').addEventListener('click', () => {
+    if (confirm('Tout effacer ? Cette action est irréversible.')){
+      localStorage.removeItem(STORAGE_KEY);
+      state = loadState();
+      saveState();
+      closeModal();
+      renderToday(); renderPlanning(); renderChat();
+      toast('Données effacées');
+    }
+  });
+}
+
+/* ============================================================
+   TOAST
+   ============================================================ */
+let toastTimer = null;
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+/* ============================================================
+   PWA — service worker inline
+   ============================================================ */
+if ('serviceWorker' in navigator) {
+  const swCode = `
+    const CACHE = 'flux-v2';
+    self.addEventListener('install', e => { self.skipWaiting(); });
+    self.addEventListener('activate', e => { e.waitUntil(self.clients.claim()); });
+    self.addEventListener('fetch', e => {
+      if (e.request.method !== 'GET') return;
+      e.respondWith(
+        caches.open(CACHE).then(cache =>
+          cache.match(e.request).then(hit => {
+            const fetchPromise = fetch(e.request).then(resp => {
+              try { cache.put(e.request, resp.clone()); } catch(err){}
+              return resp;
+            }).catch(() => hit);
+            return hit || fetchPromise;
+          })
+        )
+      );
+    });
+  `;
+  try {
+    const blob = new Blob([swCode], { type:'application/javascript' });
+    const swUrl = URL.createObjectURL(blob);
+    navigator.serviceWorker.register(swUrl).catch(()=>{});
+  } catch(e){}
+}
+
+/* ============================================================
+   INIT
+   ============================================================ */
+function init(){
+  renderToday();
+  renderPlanning();
+  renderChat();
+  initSpeech();
+}
+init();
+</script>
+</body>
+</html>
